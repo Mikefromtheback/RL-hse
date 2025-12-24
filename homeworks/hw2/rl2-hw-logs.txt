@@ -1,0 +1,1759 @@
+(venv) sohatiy@sohatiy:~/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project$ mlagents-learn dog_config.yaml --run-id=DogSmart1 --resume
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+        
+ Version information:
+  ml-agents: 1.1.0,
+  ml-agents-envs: 1.1.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.9.1+cu128
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 3.0.0-exp.1 and communication version 1.5.0
+[INFO] Connected new brain: DoggyAgent?team=0
+[INFO] Hyperparameters for behavior name DoggyAgent: 
+	trainer_type:	ppo
+	hyperparameters:	
+	  batch_size:	1024
+	  buffer_size:	10240
+	  learning_rate:	0.0003
+	  beta:	0.0005
+	  epsilon:	0.2
+	  lambd:	0.95
+	  num_epoch:	3
+	  shared_critic:	False
+	  learning_rate_schedule:	linear
+	  beta_schedule:	linear
+	  epsilon_schedule:	linear
+	checkpoint_interval:	50000
+	network_settings:	
+	  normalize:	True
+	  hidden_units:	128
+	  num_layers:	2
+	  vis_encode_type:	simple
+	  memory:	None
+	  goal_conditioning_type:	hyper
+	  deterministic:	False
+	reward_signals:	
+	  extrinsic:	
+	    gamma:	0.99
+	    strength:	1.0
+	    network_settings:	
+	      normalize:	False
+	      hidden_units:	128
+	      num_layers:	2
+	      vis_encode_type:	simple
+	      memory:	None
+	      goal_conditioning_type:	hyper
+	      deterministic:	False
+	init_path:	None
+	keep_checkpoints:	5
+	even_checkpoints:	False
+	max_steps:	2000000
+	time_horizon:	64
+	summary_freq:	2000
+	threaded:	False
+	self_play:	None
+	behavioral_cloning:	None
+[INFO] Resuming from results/DogSmart1/DoggyAgent.
+[INFO] Resuming training from step 1000020.
+[INFO] DoggyAgent. Step: 1002000. Time Elapsed: 30.356 s. Mean Reward: 9.068. Std of Reward: 9.611. Training.
+[INFO] DoggyAgent. Step: 1004000. Time Elapsed: 50.308 s. Mean Reward: 7.771. Std of Reward: 9.838. Training.
+[INFO] DoggyAgent. Step: 1006000. Time Elapsed: 71.549 s. Mean Reward: 6.438. Std of Reward: 9.502. Training.
+[INFO] DoggyAgent. Step: 1008000. Time Elapsed: 91.650 s. Mean Reward: 12.794. Std of Reward: 8.598. Training.
+[INFO] DoggyAgent. Step: 1010000. Time Elapsed: 115.508 s. Mean Reward: 6.036. Std of Reward: 9.153. Training.
+[INFO] DoggyAgent. Step: 1012000. Time Elapsed: 144.543 s. Mean Reward: 3.294. Std of Reward: 6.742. Training.
+[INFO] DoggyAgent. Step: 1014000. Time Elapsed: 167.722 s. Mean Reward: 9.857. Std of Reward: 9.098. Training.
+[INFO] DoggyAgent. Step: 1016000. Time Elapsed: 188.452 s. Mean Reward: 8.738. Std of Reward: 10.388. Training.
+[INFO] DoggyAgent. Step: 1018000. Time Elapsed: 209.406 s. Mean Reward: 8.202. Std of Reward: 10.676. Training.
+[INFO] DoggyAgent. Step: 1020000. Time Elapsed: 231.031 s. Mean Reward: 8.357. Std of Reward: 9.283. Training.
+[INFO] DoggyAgent. Step: 1022000. Time Elapsed: 257.960 s. Mean Reward: 11.246. Std of Reward: 10.414. Training.
+[INFO] DoggyAgent. Step: 1024000. Time Elapsed: 279.191 s. Mean Reward: 9.680. Std of Reward: 8.705. Training.
+[INFO] DoggyAgent. Step: 1026000. Time Elapsed: 299.514 s. Mean Reward: 5.774. Std of Reward: 9.096. Training.
+[INFO] DoggyAgent. Step: 1028000. Time Elapsed: 319.176 s. Mean Reward: 8.469. Std of Reward: 9.495. Training.
+[INFO] DoggyAgent. Step: 1030000. Time Elapsed: 339.914 s. Mean Reward: 6.859. Std of Reward: 8.517. Training.
+[INFO] DoggyAgent. Step: 1032000. Time Elapsed: 361.952 s. Mean Reward: 18.537. Std of Reward: 7.827. Training.
+[INFO] DoggyAgent. Step: 1034000. Time Elapsed: 383.135 s. Mean Reward: 9.048. Std of Reward: 9.497. Training.
+[INFO] DoggyAgent. Step: 1036000. Time Elapsed: 403.341 s. Mean Reward: 17.293. Std of Reward: 7.097. Training.
+[INFO] DoggyAgent. Step: 1038000. Time Elapsed: 423.901 s. Mean Reward: 7.182. Std of Reward: 11.134. Training.
+[INFO] DoggyAgent. Step: 1040000. Time Elapsed: 443.007 s. Mean Reward: 7.059. Std of Reward: 8.701. Training.
+[INFO] DoggyAgent. Step: 1042000. Time Elapsed: 464.454 s. Mean Reward: 12.991. Std of Reward: 8.577. Training.
+[INFO] DoggyAgent. Step: 1044000. Time Elapsed: 485.914 s. Mean Reward: 5.793. Std of Reward: 8.807. Training.
+[INFO] DoggyAgent. Step: 1046000. Time Elapsed: 506.586 s. Mean Reward: 11.212. Std of Reward: 9.668. Training.
+[INFO] DoggyAgent. Step: 1048000. Time Elapsed: 525.845 s. Mean Reward: 6.859. Std of Reward: 9.501. Training.
+[INFO] DoggyAgent. Step: 1050000. Time Elapsed: 545.635 s. Mean Reward: 6.711. Std of Reward: 8.921. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 19:43:12.269000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1049950.onnx
+[INFO] DoggyAgent. Step: 1052000. Time Elapsed: 569.496 s. Mean Reward: 8.630. Std of Reward: 10.703. Training.
+[INFO] DoggyAgent. Step: 1054000. Time Elapsed: 584.549 s. Mean Reward: 13.453. Std of Reward: 10.201. Training.
+[INFO] DoggyAgent. Step: 1056000. Time Elapsed: 600.017 s. Mean Reward: 9.756. Std of Reward: 9.469. Training.
+[INFO] DoggyAgent. Step: 1058000. Time Elapsed: 615.137 s. Mean Reward: 13.026. Std of Reward: 9.827. Training.
+[INFO] DoggyAgent. Step: 1060000. Time Elapsed: 630.271 s. Mean Reward: 8.895. Std of Reward: 9.974. Training.
+[INFO] DoggyAgent. Step: 1062000. Time Elapsed: 647.324 s. Mean Reward: 8.715. Std of Reward: 10.009. Training.
+[INFO] DoggyAgent. Step: 1064000. Time Elapsed: 663.455 s. Mean Reward: 10.319. Std of Reward: 9.893. Training.
+[INFO] DoggyAgent. Step: 1066000. Time Elapsed: 678.561 s. Mean Reward: 9.802. Std of Reward: 8.724. Training.
+[INFO] DoggyAgent. Step: 1068000. Time Elapsed: 693.912 s. Mean Reward: 11.104. Std of Reward: 9.943. Training.
+[INFO] DoggyAgent. Step: 1070000. Time Elapsed: 708.882 s. Mean Reward: 8.764. Std of Reward: 10.283. Training.
+[INFO] DoggyAgent. Step: 1072000. Time Elapsed: 726.080 s. Mean Reward: 12.591. Std of Reward: 10.385. Training.
+[INFO] DoggyAgent. Step: 1074000. Time Elapsed: 740.221 s. Mean Reward: 10.066. Std of Reward: 9.623. Training.
+[INFO] DoggyAgent. Step: 1076000. Time Elapsed: 754.906 s. Mean Reward: 9.489. Std of Reward: 11.030. Training.
+[INFO] DoggyAgent. Step: 1078000. Time Elapsed: 768.862 s. Mean Reward: 11.919. Std of Reward: 10.107. Training.
+[INFO] DoggyAgent. Step: 1080000. Time Elapsed: 783.245 s. Mean Reward: 13.706. Std of Reward: 9.156. Training.
+[INFO] DoggyAgent. Step: 1082000. Time Elapsed: 797.817 s. Mean Reward: 13.775. Std of Reward: 10.649. Training.
+[INFO] DoggyAgent. Step: 1084000. Time Elapsed: 813.763 s. Mean Reward: 12.150. Std of Reward: 8.996. Training.
+[INFO] DoggyAgent. Step: 1086000. Time Elapsed: 828.853 s. Mean Reward: 9.954. Std of Reward: 10.475. Training.
+[INFO] DoggyAgent. Step: 1088000. Time Elapsed: 843.226 s. Mean Reward: 9.829. Std of Reward: 9.169. Training.
+[INFO] DoggyAgent. Step: 1090000. Time Elapsed: 857.762 s. Mean Reward: 10.653. Std of Reward: 11.211. Training.
+[INFO] DoggyAgent. Step: 1092000. Time Elapsed: 872.587 s. Mean Reward: 10.449. Std of Reward: 11.337. Training.
+[INFO] DoggyAgent. Step: 1094000. Time Elapsed: 888.794 s. Mean Reward: 14.092. Std of Reward: 9.628. Training.
+[INFO] DoggyAgent. Step: 1096000. Time Elapsed: 903.467 s. Mean Reward: 11.966. Std of Reward: 9.515. Training.
+[INFO] DoggyAgent. Step: 1098000. Time Elapsed: 917.937 s. Mean Reward: 10.721. Std of Reward: 10.115. Training.
+[INFO] DoggyAgent. Step: 1100000. Time Elapsed: 932.592 s. Mean Reward: 7.031. Std of Reward: 8.564. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 19:49:39.100000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1099999.onnx
+[INFO] DoggyAgent. Step: 1102000. Time Elapsed: 948.748 s. Mean Reward: 9.378. Std of Reward: 11.169. Training.
+[INFO] DoggyAgent. Step: 1104000. Time Elapsed: 965.237 s. Mean Reward: 8.125. Std of Reward: 10.034. Training.
+[INFO] DoggyAgent. Step: 1106000. Time Elapsed: 980.622 s. Mean Reward: 8.818. Std of Reward: 10.189. Training.
+[INFO] DoggyAgent. Step: 1108000. Time Elapsed: 995.498 s. Mean Reward: 9.964. Std of Reward: 10.548. Training.
+[INFO] DoggyAgent. Step: 1110000. Time Elapsed: 1010.490 s. Mean Reward: 8.773. Std of Reward: 9.807. Training.
+[INFO] DoggyAgent. Step: 1112000. Time Elapsed: 1025.130 s. Mean Reward: 11.166. Std of Reward: 10.563. Training.
+[INFO] DoggyAgent. Step: 1114000. Time Elapsed: 1042.668 s. Mean Reward: 12.143. Std of Reward: 9.278. Training.
+[INFO] DoggyAgent. Step: 1116000. Time Elapsed: 1058.572 s. Mean Reward: 14.070. Std of Reward: 10.096. Training.
+[INFO] DoggyAgent. Step: 1118000. Time Elapsed: 1074.893 s. Mean Reward: 10.620. Std of Reward: 11.135. Training.
+[INFO] DoggyAgent. Step: 1120000. Time Elapsed: 1091.061 s. Mean Reward: 10.007. Std of Reward: 9.449. Training.
+[INFO] DoggyAgent. Step: 1122000. Time Elapsed: 1107.439 s. Mean Reward: 11.960. Std of Reward: 8.993. Training.
+[INFO] DoggyAgent. Step: 1124000. Time Elapsed: 1125.556 s. Mean Reward: 13.128. Std of Reward: 9.136. Training.
+[INFO] DoggyAgent. Step: 1126000. Time Elapsed: 1141.807 s. Mean Reward: 14.928. Std of Reward: 5.702. Training.
+[INFO] DoggyAgent. Step: 1128000. Time Elapsed: 1156.801 s. Mean Reward: 9.922. Std of Reward: 8.962. Training.
+[INFO] DoggyAgent. Step: 1130000. Time Elapsed: 1172.538 s. Mean Reward: 12.569. Std of Reward: 10.913. Training.
+[INFO] DoggyAgent. Step: 1132000. Time Elapsed: 1189.371 s. Mean Reward: 12.947. Std of Reward: 9.941. Training.
+[INFO] DoggyAgent. Step: 1134000. Time Elapsed: 1207.539 s. Mean Reward: 11.274. Std of Reward: 9.717. Training.
+[INFO] DoggyAgent. Step: 1136000. Time Elapsed: 1221.737 s. Mean Reward: 20.546. Std of Reward: 3.155. Training.
+[INFO] DoggyAgent. Step: 1138000. Time Elapsed: 1236.085 s. Mean Reward: 12.705. Std of Reward: 10.309. Training.
+[INFO] DoggyAgent. Step: 1140000. Time Elapsed: 1251.353 s. Mean Reward: 9.525. Std of Reward: 9.239. Training.
+[INFO] DoggyAgent. Step: 1142000. Time Elapsed: 1266.150 s. Mean Reward: 13.033. Std of Reward: 9.610. Training.
+[INFO] DoggyAgent. Step: 1144000. Time Elapsed: 1282.697 s. Mean Reward: 11.739. Std of Reward: 9.403. Training.
+[INFO] DoggyAgent. Step: 1146000. Time Elapsed: 1296.888 s. Mean Reward: 10.897. Std of Reward: 10.962. Training.
+[INFO] DoggyAgent. Step: 1148000. Time Elapsed: 1311.374 s. Mean Reward: 12.593. Std of Reward: 10.184. Training.
+[INFO] DoggyAgent. Step: 1150000. Time Elapsed: 1326.005 s. Mean Reward: 9.856. Std of Reward: 10.132. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 19:56:12.513000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1149969.onnx
+[INFO] DoggyAgent. Step: 1152000. Time Elapsed: 1341.991 s. Mean Reward: 15.601. Std of Reward: 9.318. Training.
+[INFO] DoggyAgent. Step: 1154000. Time Elapsed: 1356.262 s. Mean Reward: 9.701. Std of Reward: 11.006. Training.
+[INFO] DoggyAgent. Step: 1156000. Time Elapsed: 1372.630 s. Mean Reward: 13.395. Std of Reward: 8.882. Training.
+[INFO] DoggyAgent. Step: 1158000. Time Elapsed: 1387.259 s. Mean Reward: 9.998. Std of Reward: 9.415. Training.
+[INFO] DoggyAgent. Step: 1160000. Time Elapsed: 1401.611 s. Mean Reward: 6.991. Std of Reward: 9.487. Training.
+[INFO] DoggyAgent. Step: 1162000. Time Elapsed: 1416.167 s. Mean Reward: 11.346. Std of Reward: 10.145. Training.
+[INFO] DoggyAgent. Step: 1164000. Time Elapsed: 1430.429 s. Mean Reward: 11.855. Std of Reward: 12.326. Training.
+[INFO] DoggyAgent. Step: 1166000. Time Elapsed: 1446.484 s. Mean Reward: 13.442. Std of Reward: 8.782. Training.
+[INFO] DoggyAgent. Step: 1168000. Time Elapsed: 1460.185 s. Mean Reward: 10.668. Std of Reward: 11.358. Training.
+[INFO] DoggyAgent. Step: 1170000. Time Elapsed: 1474.574 s. Mean Reward: 13.034. Std of Reward: 9.556. Training.
+[INFO] DoggyAgent. Step: 1172000. Time Elapsed: 1488.603 s. Mean Reward: 10.082. Std of Reward: 10.791. Training.
+[INFO] DoggyAgent. Step: 1174000. Time Elapsed: 1502.968 s. Mean Reward: 12.446. Std of Reward: 7.995. Training.
+[INFO] DoggyAgent. Step: 1176000. Time Elapsed: 1519.265 s. Mean Reward: 9.346. Std of Reward: 10.428. Training.
+[INFO] DoggyAgent. Step: 1178000. Time Elapsed: 1533.068 s. Mean Reward: 5.711. Std of Reward: 8.763. Training.
+[INFO] DoggyAgent. Step: 1180000. Time Elapsed: 1547.278 s. Mean Reward: 12.254. Std of Reward: 9.574. Training.
+[INFO] DoggyAgent. Step: 1182000. Time Elapsed: 1561.344 s. Mean Reward: 13.093. Std of Reward: 11.291. Training.
+[INFO] DoggyAgent. Step: 1184000. Time Elapsed: 1575.693 s. Mean Reward: 11.780. Std of Reward: 8.321. Training.
+[INFO] DoggyAgent. Step: 1186000. Time Elapsed: 1591.957 s. Mean Reward: 12.385. Std of Reward: 10.495. Training.
+[INFO] DoggyAgent. Step: 1188000. Time Elapsed: 1606.029 s. Mean Reward: 12.256. Std of Reward: 10.061. Training.
+[INFO] DoggyAgent. Step: 1190000. Time Elapsed: 1619.841 s. Mean Reward: 8.713. Std of Reward: 11.069. Training.
+[INFO] DoggyAgent. Step: 1192000. Time Elapsed: 1633.898 s. Mean Reward: 12.145. Std of Reward: 9.669. Training.
+[INFO] DoggyAgent. Step: 1194000. Time Elapsed: 1648.247 s. Mean Reward: 16.832. Std of Reward: 6.881. Training.
+[INFO] DoggyAgent. Step: 1196000. Time Elapsed: 1664.450 s. Mean Reward: 12.762. Std of Reward: 10.159. Training.
+[INFO] DoggyAgent. Step: 1198000. Time Elapsed: 1678.220 s. Mean Reward: 14.677. Std of Reward: 9.770. Training.
+[INFO] DoggyAgent. Step: 1200000. Time Elapsed: 1692.906 s. Mean Reward: 9.882. Std of Reward: 9.738. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 20:02:19.416000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1199980.onnx
+[INFO] DoggyAgent. Step: 1202000. Time Elapsed: 1708.232 s. Mean Reward: 13.246. Std of Reward: 9.417. Training.
+[INFO] DoggyAgent. Step: 1204000. Time Elapsed: 1722.427 s. Mean Reward: 12.939. Std of Reward: 10.814. Training.
+[INFO] DoggyAgent. Step: 1206000. Time Elapsed: 1738.229 s. Mean Reward: 15.242. Std of Reward: 10.056. Training.
+[INFO] DoggyAgent. Step: 1208000. Time Elapsed: 1752.506 s. Mean Reward: 10.190. Std of Reward: 10.029. Training.
+[INFO] DoggyAgent. Step: 1210000. Time Elapsed: 1766.810 s. Mean Reward: 12.208. Std of Reward: 10.559. Training.
+[INFO] DoggyAgent. Step: 1212000. Time Elapsed: 1780.748 s. Mean Reward: 14.725. Std of Reward: 8.593. Training.
+[INFO] DoggyAgent. Step: 1214000. Time Elapsed: 1795.135 s. Mean Reward: 14.258. Std of Reward: 10.020. Training.
+[INFO] DoggyAgent. Step: 1216000. Time Elapsed: 1811.113 s. Mean Reward: 9.443. Std of Reward: 9.350. Training.
+[INFO] DoggyAgent. Step: 1218000. Time Elapsed: 1825.199 s. Mean Reward: 11.305. Std of Reward: 11.198. Training.
+[INFO] DoggyAgent. Step: 1220000. Time Elapsed: 1839.731 s. Mean Reward: 10.014. Std of Reward: 9.841. Training.
+[INFO] DoggyAgent. Step: 1222000. Time Elapsed: 1854.602 s. Mean Reward: 14.209. Std of Reward: 10.366. Training.
+[INFO] DoggyAgent. Step: 1224000. Time Elapsed: 1869.160 s. Mean Reward: 11.783. Std of Reward: 10.814. Training.
+[INFO] DoggyAgent. Step: 1226000. Time Elapsed: 1883.537 s. Mean Reward: 13.942. Std of Reward: 9.427. Training.
+[INFO] DoggyAgent. Step: 1228000. Time Elapsed: 1899.900 s. Mean Reward: 13.523. Std of Reward: 10.933. Training.
+[INFO] DoggyAgent. Step: 1230000. Time Elapsed: 1914.176 s. Mean Reward: 17.800. Std of Reward: 6.247. Training.
+[INFO] DoggyAgent. Step: 1232000. Time Elapsed: 1928.363 s. Mean Reward: 11.737. Std of Reward: 10.105. Training.
+[INFO] DoggyAgent. Step: 1234000. Time Elapsed: 1942.553 s. Mean Reward: 12.816. Std of Reward: 9.599. Training.
+[INFO] DoggyAgent. Step: 1236000. Time Elapsed: 1956.705 s. Mean Reward: 16.699. Std of Reward: 8.094. Training.
+[INFO] DoggyAgent. Step: 1238000. Time Elapsed: 1972.665 s. Mean Reward: 8.867. Std of Reward: 10.818. Training.
+[INFO] DoggyAgent. Step: 1240000. Time Elapsed: 1986.903 s. Mean Reward: 15.534. Std of Reward: 9.139. Training.
+[INFO] DoggyAgent. Step: 1242000. Time Elapsed: 2000.749 s. Mean Reward: 12.871. Std of Reward: 9.230. Training.
+[INFO] DoggyAgent. Step: 1244000. Time Elapsed: 2015.465 s. Mean Reward: 12.210. Std of Reward: 9.685. Training.
+[INFO] DoggyAgent. Step: 1246000. Time Elapsed: 2029.380 s. Mean Reward: 10.016. Std of Reward: 9.603. Training.
+[INFO] DoggyAgent. Step: 1248000. Time Elapsed: 2045.654 s. Mean Reward: 14.224. Std of Reward: 5.641. Training.
+[INFO] DoggyAgent. Step: 1250000. Time Elapsed: 2059.506 s. Mean Reward: 12.534. Std of Reward: 8.190. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 20:08:26.014000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1249942.onnx
+[INFO] DoggyAgent. Step: 1252000. Time Elapsed: 2075.150 s. Mean Reward: 14.150. Std of Reward: 10.079. Training.
+[INFO] DoggyAgent. Step: 1254000. Time Elapsed: 2089.331 s. Mean Reward: 8.971. Std of Reward: 8.995. Training.
+[INFO] DoggyAgent. Step: 1256000. Time Elapsed: 2103.385 s. Mean Reward: 8.451. Std of Reward: 6.440. Training.
+[INFO] DoggyAgent. Step: 1258000. Time Elapsed: 2119.672 s. Mean Reward: 11.295. Std of Reward: 10.328. Training.
+[INFO] DoggyAgent. Step: 1260000. Time Elapsed: 2134.250 s. Mean Reward: 11.572. Std of Reward: 9.831. Training.
+[INFO] DoggyAgent. Step: 1262000. Time Elapsed: 2147.906 s. Mean Reward: 17.440. Std of Reward: 9.179. Training.
+[INFO] DoggyAgent. Step: 1264000. Time Elapsed: 2162.350 s. Mean Reward: 14.656. Std of Reward: 7.952. Training.
+[INFO] DoggyAgent. Step: 1266000. Time Elapsed: 2176.205 s. Mean Reward: 10.573. Std of Reward: 9.304. Training.
+[INFO] DoggyAgent. Step: 1268000. Time Elapsed: 2192.714 s. Mean Reward: 12.288. Std of Reward: 7.589. Training.
+[INFO] DoggyAgent. Step: 1270000. Time Elapsed: 2207.522 s. Mean Reward: 9.464. Std of Reward: 9.368. Training.
+[INFO] DoggyAgent. Step: 1272000. Time Elapsed: 2222.059 s. Mean Reward: 13.323. Std of Reward: 9.344. Training.
+[INFO] DoggyAgent. Step: 1274000. Time Elapsed: 2236.569 s. Mean Reward: 11.455. Std of Reward: 9.091. Training.
+[INFO] DoggyAgent. Step: 1276000. Time Elapsed: 2251.391 s. Mean Reward: 13.151. Std of Reward: 10.956. Training.
+[INFO] DoggyAgent. Step: 1278000. Time Elapsed: 2267.330 s. Mean Reward: 8.908. Std of Reward: 10.348. Training.
+[INFO] DoggyAgent. Step: 1280000. Time Elapsed: 2281.547 s. Mean Reward: 11.576. Std of Reward: 10.650. Training.
+[INFO] DoggyAgent. Step: 1282000. Time Elapsed: 2296.268 s. Mean Reward: 13.673. Std of Reward: 8.701. Training.
+[INFO] DoggyAgent. Step: 1284000. Time Elapsed: 2310.434 s. Mean Reward: 8.689. Std of Reward: 7.552. Training.
+[INFO] DoggyAgent. Step: 1286000. Time Elapsed: 2324.447 s. Mean Reward: 8.124. Std of Reward: 9.182. Training.
+[INFO] DoggyAgent. Step: 1288000. Time Elapsed: 2340.309 s. Mean Reward: 11.911. Std of Reward: 9.838. Training.
+[INFO] DoggyAgent. Step: 1290000. Time Elapsed: 2354.485 s. Mean Reward: 10.009. Std of Reward: 10.929. Training.
+[INFO] DoggyAgent. Step: 1292000. Time Elapsed: 2369.027 s. Mean Reward: 16.535. Std of Reward: 8.174. Training.
+[INFO] DoggyAgent. Step: 1294000. Time Elapsed: 2383.419 s. Mean Reward: 10.593. Std of Reward: 10.524. Training.
+[INFO] DoggyAgent. Step: 1296000. Time Elapsed: 2397.276 s. Mean Reward: 12.473. Std of Reward: 8.723. Training.
+[INFO] DoggyAgent. Step: 1298000. Time Elapsed: 2413.228 s. Mean Reward: 13.671. Std of Reward: 9.956. Training.
+[INFO] DoggyAgent. Step: 1300000. Time Elapsed: 2427.909 s. Mean Reward: 14.896. Std of Reward: 8.422. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 20:14:34.418000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1299999.onnx
+[INFO] DoggyAgent. Step: 1302000. Time Elapsed: 2443.124 s. Mean Reward: 11.454. Std of Reward: 10.029. Training.
+[INFO] DoggyAgent. Step: 1304000. Time Elapsed: 2457.790 s. Mean Reward: 10.264. Std of Reward: 9.929. Training.
+[INFO] DoggyAgent. Step: 1306000. Time Elapsed: 2472.122 s. Mean Reward: 10.239. Std of Reward: 10.462. Training.
+[INFO] DoggyAgent. Step: 1308000. Time Elapsed: 2486.182 s. Mean Reward: 8.809. Std of Reward: 10.092. Training.
+[INFO] DoggyAgent. Step: 1310000. Time Elapsed: 2501.840 s. Mean Reward: 12.304. Std of Reward: 7.397. Training.
+[INFO] DoggyAgent. Step: 1312000. Time Elapsed: 2516.276 s. Mean Reward: 12.146. Std of Reward: 10.703. Training.
+[INFO] DoggyAgent. Step: 1314000. Time Elapsed: 2530.988 s. Mean Reward: 14.040. Std of Reward: 8.654. Training.
+[INFO] DoggyAgent. Step: 1316000. Time Elapsed: 2545.471 s. Mean Reward: 10.663. Std of Reward: 10.891. Training.
+[INFO] DoggyAgent. Step: 1318000. Time Elapsed: 2559.558 s. Mean Reward: 11.516. Std of Reward: 11.222. Training.
+[INFO] DoggyAgent. Step: 1320000. Time Elapsed: 2729.526 s. Mean Reward: 12.298. Std of Reward: 9.528. Training.
+[INFO] DoggyAgent. Step: 1322000. Time Elapsed: 2975.245 s. Mean Reward: 11.443. Std of Reward: 10.712. Training.
+[INFO] DoggyAgent. Step: 1324000. Time Elapsed: 2989.866 s. Mean Reward: 18.071. Std of Reward: 8.487. Training.
+[INFO] DoggyAgent. Step: 1326000. Time Elapsed: 3004.353 s. Mean Reward: 16.725. Std of Reward: 7.182. Training.
+[INFO] DoggyAgent. Step: 1328000. Time Elapsed: 3018.888 s. Mean Reward: 9.558. Std of Reward: 10.200. Training.
+[INFO] DoggyAgent. Step: 1330000. Time Elapsed: 3034.631 s. Mean Reward: 10.003. Std of Reward: 10.186. Training.
+[INFO] DoggyAgent. Step: 1332000. Time Elapsed: 3049.242 s. Mean Reward: 11.918. Std of Reward: 8.998. Training.
+[INFO] DoggyAgent. Step: 1334000. Time Elapsed: 3063.786 s. Mean Reward: 15.404. Std of Reward: 9.523. Training.
+[INFO] DoggyAgent. Step: 1336000. Time Elapsed: 3078.053 s. Mean Reward: 12.139. Std of Reward: 10.346. Training.
+[INFO] DoggyAgent. Step: 1338000. Time Elapsed: 3092.359 s. Mean Reward: 13.619. Std of Reward: 8.800. Training.
+[INFO] DoggyAgent. Step: 1340000. Time Elapsed: 3108.618 s. Mean Reward: 12.647. Std of Reward: 8.999. Training.
+[INFO] DoggyAgent. Step: 1342000. Time Elapsed: 3122.707 s. Mean Reward: 11.887. Std of Reward: 9.605. Training.
+[INFO] DoggyAgent. Step: 1344000. Time Elapsed: 3137.050 s. Mean Reward: 14.923. Std of Reward: 7.037. Training.
+[INFO] DoggyAgent. Step: 1346000. Time Elapsed: 3151.543 s. Mean Reward: 16.515. Std of Reward: 7.724. Training.
+[INFO] DoggyAgent. Step: 1348000. Time Elapsed: 3166.022 s. Mean Reward: 10.301. Std of Reward: 10.078. Training.
+[INFO] DoggyAgent. Step: 1350000. Time Elapsed: 3182.133 s. Mean Reward: 13.030. Std of Reward: 8.560. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 20:27:08.641000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1349987.onnx
+[INFO] DoggyAgent. Step: 1352000. Time Elapsed: 3197.754 s. Mean Reward: 8.751. Std of Reward: 10.537. Training.
+[INFO] DoggyAgent. Step: 1354000. Time Elapsed: 3212.141 s. Mean Reward: 12.031. Std of Reward: 10.883. Training.
+[INFO] DoggyAgent. Step: 1356000. Time Elapsed: 3226.731 s. Mean Reward: 12.856. Std of Reward: 8.317. Training.
+[INFO] DoggyAgent. Step: 1358000. Time Elapsed: 3240.975 s. Mean Reward: 9.984. Std of Reward: 9.686. Training.
+[INFO] DoggyAgent. Step: 1360000. Time Elapsed: 3257.285 s. Mean Reward: 13.199. Std of Reward: 7.135. Training.
+[INFO] DoggyAgent. Step: 1362000. Time Elapsed: 3271.427 s. Mean Reward: 14.437. Std of Reward: 8.469. Training.
+[INFO] DoggyAgent. Step: 1364000. Time Elapsed: 3286.178 s. Mean Reward: 14.109. Std of Reward: 8.475. Training.
+[INFO] DoggyAgent. Step: 1366000. Time Elapsed: 3300.792 s. Mean Reward: 13.470. Std of Reward: 8.149. Training.
+[INFO] DoggyAgent. Step: 1368000. Time Elapsed: 3515.878 s. Mean Reward: 16.458. Std of Reward: 8.934. Training.
+[INFO] DoggyAgent. Step: 1370000. Time Elapsed: 3532.273 s. Mean Reward: 18.455. Std of Reward: 7.724. Training.
+[INFO] DoggyAgent. Step: 1372000. Time Elapsed: 3546.435 s. Mean Reward: 11.556. Std of Reward: 10.353. Training.
+[INFO] DoggyAgent. Step: 1374000. Time Elapsed: 3560.901 s. Mean Reward: 15.212. Std of Reward: 9.721. Training.
+[INFO] DoggyAgent. Step: 1376000. Time Elapsed: 3575.043 s. Mean Reward: 16.334. Std of Reward: 10.036. Training.
+[INFO] DoggyAgent. Step: 1378000. Time Elapsed: 3589.359 s. Mean Reward: 11.743. Std of Reward: 9.062. Training.
+[INFO] DoggyAgent. Step: 1380000. Time Elapsed: 3603.811 s. Mean Reward: 13.036. Std of Reward: 9.851. Training.
+[INFO] DoggyAgent. Step: 1382000. Time Elapsed: 3620.073 s. Mean Reward: 12.048. Std of Reward: 9.134. Training.
+[INFO] DoggyAgent. Step: 1384000. Time Elapsed: 3634.039 s. Mean Reward: 14.780. Std of Reward: 10.973. Training.
+[INFO] DoggyAgent. Step: 1386000. Time Elapsed: 3648.703 s. Mean Reward: 9.905. Std of Reward: 9.580. Training.
+[INFO] DoggyAgent. Step: 1388000. Time Elapsed: 3662.857 s. Mean Reward: 12.556. Std of Reward: 11.463. Training.
+[INFO] DoggyAgent. Step: 1390000. Time Elapsed: 3677.277 s. Mean Reward: 13.368. Std of Reward: 9.301. Training.
+[INFO] DoggyAgent. Step: 1392000. Time Elapsed: 3693.623 s. Mean Reward: 11.810. Std of Reward: 9.276. Training.
+[INFO] DoggyAgent. Step: 1394000. Time Elapsed: 3708.314 s. Mean Reward: 14.167. Std of Reward: 9.094. Training.
+[INFO] DoggyAgent. Step: 1396000. Time Elapsed: 3723.105 s. Mean Reward: 16.561. Std of Reward: 8.511. Training.
+[INFO] DoggyAgent. Step: 1398000. Time Elapsed: 3736.804 s. Mean Reward: 16.583. Std of Reward: 5.479. Training.
+[INFO] DoggyAgent. Step: 1400000. Time Elapsed: 3751.338 s. Mean Reward: 13.766. Std of Reward: 10.812. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 20:36:37.846000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1399954.onnx
+[INFO] DoggyAgent. Step: 1402000. Time Elapsed: 3768.807 s. Mean Reward: 12.024. Std of Reward: 10.869. Training.
+[INFO] DoggyAgent. Step: 1404000. Time Elapsed: 3783.005 s. Mean Reward: 13.652. Std of Reward: 8.089. Training.
+[INFO] DoggyAgent. Step: 1406000. Time Elapsed: 3796.835 s. Mean Reward: 14.400. Std of Reward: 9.757. Training.
+[INFO] DoggyAgent. Step: 1408000. Time Elapsed: 3811.301 s. Mean Reward: 8.764. Std of Reward: 9.693. Training.
+[INFO] DoggyAgent. Step: 1410000. Time Elapsed: 3825.612 s. Mean Reward: 13.310. Std of Reward: 10.352. Training.
+[INFO] DoggyAgent. Step: 1412000. Time Elapsed: 4021.545 s. Mean Reward: 16.982. Std of Reward: 5.588. Training.
+[INFO] DoggyAgent. Step: 1414000. Time Elapsed: 4432.536 s. Mean Reward: 16.253. Std of Reward: 8.414. Training.
+[INFO] DoggyAgent. Step: 1416000. Time Elapsed: 4466.291 s. Mean Reward: 14.950. Std of Reward: 7.451. Training.
+[INFO] DoggyAgent. Step: 1418000. Time Elapsed: 4479.860 s. Mean Reward: 12.296. Std of Reward: 9.813. Training.
+[INFO] DoggyAgent. Step: 1420000. Time Elapsed: 4493.775 s. Mean Reward: 12.815. Std of Reward: 11.318. Training.
+[INFO] DoggyAgent. Step: 1422000. Time Elapsed: 4508.637 s. Mean Reward: 13.524. Std of Reward: 8.951. Training.
+[INFO] DoggyAgent. Step: 1424000. Time Elapsed: 4521.758 s. Mean Reward: 16.427. Std of Reward: 7.514. Training.
+[INFO] DoggyAgent. Step: 1426000. Time Elapsed: 4535.502 s. Mean Reward: 17.153. Std of Reward: 7.068. Training.
+[INFO] DoggyAgent. Step: 1428000. Time Elapsed: 4549.347 s. Mean Reward: 15.853. Std of Reward: 10.634. Training.
+[INFO] DoggyAgent. Step: 1430000. Time Elapsed: 4562.769 s. Mean Reward: 11.160. Std of Reward: 10.140. Training.
+[INFO] DoggyAgent. Step: 1432000. Time Elapsed: 4577.948 s. Mean Reward: 10.677. Std of Reward: 12.080. Training.
+[INFO] DoggyAgent. Step: 1434000. Time Elapsed: 4591.640 s. Mean Reward: 12.144. Std of Reward: 8.855. Training.
+[INFO] DoggyAgent. Step: 1436000. Time Elapsed: 4604.933 s. Mean Reward: 11.575. Std of Reward: 9.489. Training.
+[INFO] DoggyAgent. Step: 1438000. Time Elapsed: 4618.540 s. Mean Reward: 16.240. Std of Reward: 6.987. Training.
+[INFO] DoggyAgent. Step: 1440000. Time Elapsed: 4631.738 s. Mean Reward: 12.838. Std of Reward: 10.395. Training.
+[INFO] DoggyAgent. Step: 1442000. Time Elapsed: 4647.068 s. Mean Reward: 12.945. Std of Reward: 9.537. Training.
+[INFO] DoggyAgent. Step: 1444000. Time Elapsed: 4660.416 s. Mean Reward: 12.226. Std of Reward: 9.501. Training.
+[INFO] DoggyAgent. Step: 1446000. Time Elapsed: 4674.604 s. Mean Reward: 12.771. Std of Reward: 10.522. Training.
+[INFO] DoggyAgent. Step: 1448000. Time Elapsed: 4688.498 s. Mean Reward: 13.505. Std of Reward: 8.073. Training.
+[INFO] DoggyAgent. Step: 1450000. Time Elapsed: 4701.968 s. Mean Reward: 12.038. Std of Reward: 9.994. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 20:52:28.479000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1449971.onnx
+[INFO] DoggyAgent. Step: 1452000. Time Elapsed: 4716.579 s. Mean Reward: 16.799. Std of Reward: 9.039. Training.
+[INFO] DoggyAgent. Step: 1454000. Time Elapsed: 4732.550 s. Mean Reward: 10.098. Std of Reward: 9.477. Training.
+[INFO] DoggyAgent. Step: 1456000. Time Elapsed: 4746.267 s. Mean Reward: 13.929. Std of Reward: 10.263. Training.
+[INFO] DoggyAgent. Step: 1458000. Time Elapsed: 4759.703 s. Mean Reward: 12.479. Std of Reward: 10.316. Training.
+[INFO] DoggyAgent. Step: 1460000. Time Elapsed: 4773.420 s. Mean Reward: 12.660. Std of Reward: 9.941. Training.
+[INFO] DoggyAgent. Step: 1462000. Time Elapsed: 4787.367 s. Mean Reward: 11.143. Std of Reward: 9.987. Training.
+[INFO] DoggyAgent. Step: 1464000. Time Elapsed: 4802.926 s. Mean Reward: 15.212. Std of Reward: 8.537. Training.
+[INFO] DoggyAgent. Step: 1466000. Time Elapsed: 4816.655 s. Mean Reward: 9.892. Std of Reward: 10.443. Training.
+[INFO] DoggyAgent. Step: 1468000. Time Elapsed: 4830.940 s. Mean Reward: 18.913. Std of Reward: 2.503. Training.
+[INFO] DoggyAgent. Step: 1470000. Time Elapsed: 4844.508 s. Mean Reward: 16.749. Std of Reward: 6.656. Training.
+[INFO] DoggyAgent. Step: 1472000. Time Elapsed: 4858.323 s. Mean Reward: 15.505. Std of Reward: 6.075. Training.
+[INFO] DoggyAgent. Step: 1474000. Time Elapsed: 4873.965 s. Mean Reward: 14.275. Std of Reward: 10.182. Training.
+[INFO] DoggyAgent. Step: 1476000. Time Elapsed: 4887.629 s. Mean Reward: 20.738. Std of Reward: 4.576. Training.
+[INFO] DoggyAgent. Step: 1478000. Time Elapsed: 4901.589 s. Mean Reward: 12.723. Std of Reward: 10.833. Training.
+[INFO] DoggyAgent. Step: 1480000. Time Elapsed: 4915.203 s. Mean Reward: 19.353. Std of Reward: 5.538. Training.
+[INFO] DoggyAgent. Step: 1482000. Time Elapsed: 4928.693 s. Mean Reward: 16.264. Std of Reward: 8.890. Training.
+[INFO] DoggyAgent. Step: 1484000. Time Elapsed: 4944.597 s. Mean Reward: 11.715. Std of Reward: 10.096. Training.
+[INFO] DoggyAgent. Step: 1486000. Time Elapsed: 4957.978 s. Mean Reward: 18.518. Std of Reward: 7.956. Training.
+[INFO] DoggyAgent. Step: 1488000. Time Elapsed: 4971.902 s. Mean Reward: 8.695. Std of Reward: 8.920. Training.
+[INFO] DoggyAgent. Step: 1490000. Time Elapsed: 4985.735 s. Mean Reward: 14.970. Std of Reward: 6.584. Training.
+[INFO] DoggyAgent. Step: 1492000. Time Elapsed: 4999.534 s. Mean Reward: 12.104. Std of Reward: 8.601. Training.
+[INFO] DoggyAgent. Step: 1494000. Time Elapsed: 5014.823 s. Mean Reward: 9.827. Std of Reward: 9.653. Training.
+[INFO] DoggyAgent. Step: 1496000. Time Elapsed: 5029.162 s. Mean Reward: 16.353. Std of Reward: 6.391. Training.
+[INFO] DoggyAgent. Step: 1498000. Time Elapsed: 5043.201 s. Mean Reward: 17.228. Std of Reward: 7.500. Training.
+[INFO] DoggyAgent. Step: 1500000. Time Elapsed: 5056.903 s. Mean Reward: 17.224. Std of Reward: 7.813. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 20:58:23.413000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1499969.onnx
+[INFO] DoggyAgent. Step: 1502000. Time Elapsed: 5072.221 s. Mean Reward: 11.242. Std of Reward: 11.367. Training.
+[INFO] DoggyAgent. Step: 1504000. Time Elapsed: 5087.575 s. Mean Reward: 10.770. Std of Reward: 9.534. Training.
+[INFO] DoggyAgent. Step: 1506000. Time Elapsed: 5100.927 s. Mean Reward: 16.912. Std of Reward: 10.001. Training.
+[INFO] DoggyAgent. Step: 1508000. Time Elapsed: 5114.840 s. Mean Reward: 11.634. Std of Reward: 11.193. Training.
+[INFO] DoggyAgent. Step: 1510000. Time Elapsed: 5129.306 s. Mean Reward: 12.858. Std of Reward: 9.288. Training.
+[INFO] DoggyAgent. Step: 1512000. Time Elapsed: 5142.582 s. Mean Reward: 15.349. Std of Reward: 8.768. Training.
+[INFO] DoggyAgent. Step: 1514000. Time Elapsed: 5158.099 s. Mean Reward: 10.315. Std of Reward: 9.700. Training.
+[INFO] DoggyAgent. Step: 1516000. Time Elapsed: 5171.706 s. Mean Reward: 14.212. Std of Reward: 8.214. Training.
+[INFO] DoggyAgent. Step: 1518000. Time Elapsed: 5184.806 s. Mean Reward: 18.951. Std of Reward: 7.250. Training.
+[INFO] DoggyAgent. Step: 1520000. Time Elapsed: 5198.400 s. Mean Reward: 14.423. Std of Reward: 8.743. Training.
+[INFO] DoggyAgent. Step: 1522000. Time Elapsed: 5211.896 s. Mean Reward: 14.887. Std of Reward: 9.927. Training.
+[INFO] DoggyAgent. Step: 1524000. Time Elapsed: 5227.451 s. Mean Reward: 9.749. Std of Reward: 8.734. Training.
+[INFO] DoggyAgent. Step: 1526000. Time Elapsed: 5241.404 s. Mean Reward: 15.004. Std of Reward: 8.855. Training.
+[INFO] DoggyAgent. Step: 1528000. Time Elapsed: 5255.141 s. Mean Reward: 20.311. Std of Reward: 6.555. Training.
+[INFO] DoggyAgent. Step: 1530000. Time Elapsed: 5268.782 s. Mean Reward: 11.540. Std of Reward: 8.622. Training.
+[INFO] DoggyAgent. Step: 1532000. Time Elapsed: 5282.636 s. Mean Reward: 11.377. Std of Reward: 10.139. Training.
+[INFO] DoggyAgent. Step: 1534000. Time Elapsed: 5296.218 s. Mean Reward: 11.046. Std of Reward: 9.284. Training.
+[INFO] DoggyAgent. Step: 1536000. Time Elapsed: 5311.748 s. Mean Reward: 14.290. Std of Reward: 9.330. Training.
+[INFO] DoggyAgent. Step: 1538000. Time Elapsed: 5325.768 s. Mean Reward: 12.303. Std of Reward: 10.211. Training.
+[INFO] DoggyAgent. Step: 1540000. Time Elapsed: 5340.224 s. Mean Reward: 11.288. Std of Reward: 9.138. Training.
+[INFO] DoggyAgent. Step: 1542000. Time Elapsed: 5353.850 s. Mean Reward: 19.432. Std of Reward: 8.109. Training.
+[INFO] DoggyAgent. Step: 1544000. Time Elapsed: 5368.308 s. Mean Reward: 12.327. Std of Reward: 8.887. Training.
+[INFO] DoggyAgent. Step: 1546000. Time Elapsed: 5383.168 s. Mean Reward: 14.702. Std of Reward: 10.114. Training.
+[INFO] DoggyAgent. Step: 1548000. Time Elapsed: 5397.081 s. Mean Reward: 16.921. Std of Reward: 7.208. Training.
+[INFO] DoggyAgent. Step: 1550000. Time Elapsed: 5410.688 s. Mean Reward: 17.477. Std of Reward: 8.054. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 21:04:17.197000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1549949.onnx
+[INFO] DoggyAgent. Step: 1552000. Time Elapsed: 5425.915 s. Mean Reward: 14.750. Std of Reward: 7.716. Training.
+[INFO] DoggyAgent. Step: 1554000. Time Elapsed: 5440.217 s. Mean Reward: 17.032. Std of Reward: 8.938. Training.
+[INFO] DoggyAgent. Step: 1556000. Time Elapsed: 5456.332 s. Mean Reward: 17.522. Std of Reward: 5.788. Training.
+[INFO] DoggyAgent. Step: 1558000. Time Elapsed: 5470.066 s. Mean Reward: 7.781. Std of Reward: 9.591. Training.
+[INFO] DoggyAgent. Step: 1560000. Time Elapsed: 5483.984 s. Mean Reward: 19.232. Std of Reward: 4.783. Training.
+[INFO] DoggyAgent. Step: 1562000. Time Elapsed: 5498.314 s. Mean Reward: 13.289. Std of Reward: 8.949. Training.
+[INFO] DoggyAgent. Step: 1564000. Time Elapsed: 5512.151 s. Mean Reward: 14.280. Std of Reward: 7.534. Training.
+[INFO] DoggyAgent. Step: 1566000. Time Elapsed: 5527.923 s. Mean Reward: 14.498. Std of Reward: 9.078. Training.
+[INFO] DoggyAgent. Step: 1568000. Time Elapsed: 5541.842 s. Mean Reward: 16.617. Std of Reward: 8.442. Training.
+[INFO] DoggyAgent. Step: 1570000. Time Elapsed: 5556.092 s. Mean Reward: 13.448. Std of Reward: 9.499. Training.
+[INFO] DoggyAgent. Step: 1572000. Time Elapsed: 5570.401 s. Mean Reward: 17.075. Std of Reward: 8.714. Training.
+[INFO] DoggyAgent. Step: 1574000. Time Elapsed: 5584.478 s. Mean Reward: 12.470. Std of Reward: 9.509. Training.
+[INFO] DoggyAgent. Step: 1576000. Time Elapsed: 5600.193 s. Mean Reward: 18.778. Std of Reward: 5.586. Training.
+[INFO] DoggyAgent. Step: 1578000. Time Elapsed: 5614.362 s. Mean Reward: 11.828. Std of Reward: 9.359. Training.
+[INFO] DoggyAgent. Step: 1580000. Time Elapsed: 5628.312 s. Mean Reward: 14.321. Std of Reward: 9.349. Training.
+[INFO] DoggyAgent. Step: 1582000. Time Elapsed: 5642.091 s. Mean Reward: 18.431. Std of Reward: 7.079. Training.
+[INFO] DoggyAgent. Step: 1584000. Time Elapsed: 5655.814 s. Mean Reward: 11.072. Std of Reward: 8.110. Training.
+[INFO] DoggyAgent. Step: 1586000. Time Elapsed: 5671.783 s. Mean Reward: 16.644. Std of Reward: 7.133. Training.
+[INFO] DoggyAgent. Step: 1588000. Time Elapsed: 5685.979 s. Mean Reward: 12.856. Std of Reward: 9.240. Training.
+[INFO] DoggyAgent. Step: 1590000. Time Elapsed: 5700.302 s. Mean Reward: 10.808. Std of Reward: 9.799. Training.
+[INFO] DoggyAgent. Step: 1592000. Time Elapsed: 5714.415 s. Mean Reward: 15.989. Std of Reward: 7.682. Training.
+[INFO] DoggyAgent. Step: 1594000. Time Elapsed: 5727.983 s. Mean Reward: 17.285. Std of Reward: 8.167. Training.
+[INFO] DoggyAgent. Step: 1596000. Time Elapsed: 5744.161 s. Mean Reward: 17.582. Std of Reward: 7.137. Training.
+[INFO] DoggyAgent. Step: 1598000. Time Elapsed: 5758.098 s. Mean Reward: 11.553. Std of Reward: 10.337. Training.
+[INFO] DoggyAgent. Step: 1600000. Time Elapsed: 5772.274 s. Mean Reward: 17.861. Std of Reward: 6.722. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 21:10:18.783000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1599975.onnx
+[INFO] DoggyAgent. Step: 1602000. Time Elapsed: 5787.718 s. Mean Reward: 17.110. Std of Reward: 6.841. Training.
+[INFO] DoggyAgent. Step: 1604000. Time Elapsed: 5801.395 s. Mean Reward: 15.437. Std of Reward: 7.120. Training.
+[INFO] DoggyAgent. Step: 1606000. Time Elapsed: 5817.141 s. Mean Reward: 15.979. Std of Reward: 8.725. Training.
+[INFO] DoggyAgent. Step: 1608000. Time Elapsed: 5830.820 s. Mean Reward: 14.002. Std of Reward: 8.629. Training.
+[INFO] DoggyAgent. Step: 1610000. Time Elapsed: 5844.527 s. Mean Reward: 14.359. Std of Reward: 7.509. Training.
+[INFO] DoggyAgent. Step: 1612000. Time Elapsed: 5858.697 s. Mean Reward: 14.177. Std of Reward: 9.781. Training.
+[INFO] DoggyAgent. Step: 1614000. Time Elapsed: 5871.924 s. Mean Reward: 15.554. Std of Reward: 10.149. Training.
+[INFO] DoggyAgent. Step: 1616000. Time Elapsed: 5886.099 s. Mean Reward: 16.891. Std of Reward: 8.141. Training.
+[INFO] DoggyAgent. Step: 1618000. Time Elapsed: 5901.969 s. Mean Reward: 15.139. Std of Reward: 8.024. Training.
+[INFO] DoggyAgent. Step: 1620000. Time Elapsed: 5915.983 s. Mean Reward: 15.378. Std of Reward: 8.544. Training.
+[INFO] DoggyAgent. Step: 1622000. Time Elapsed: 5930.137 s. Mean Reward: 14.554. Std of Reward: 7.086. Training.
+[INFO] DoggyAgent. Step: 1624000. Time Elapsed: 5944.108 s. Mean Reward: 12.469. Std of Reward: 10.329. Training.
+[INFO] DoggyAgent. Step: 1626000. Time Elapsed: 5958.184 s. Mean Reward: 13.715. Std of Reward: 9.814. Training.
+[INFO] DoggyAgent. Step: 1628000. Time Elapsed: 5974.349 s. Mean Reward: 17.993. Std of Reward: 7.429. Training.
+[INFO] DoggyAgent. Step: 1630000. Time Elapsed: 5988.380 s. Mean Reward: 10.732. Std of Reward: 10.606. Training.
+[INFO] DoggyAgent. Step: 1632000. Time Elapsed: 6002.778 s. Mean Reward: 15.613. Std of Reward: 8.130. Training.
+[INFO] DoggyAgent. Step: 1634000. Time Elapsed: 6016.940 s. Mean Reward: 13.819. Std of Reward: 9.440. Training.
+[INFO] DoggyAgent. Step: 1636000. Time Elapsed: 6031.396 s. Mean Reward: 11.448. Std of Reward: 10.006. Training.
+[INFO] DoggyAgent. Step: 1638000. Time Elapsed: 6046.982 s. Mean Reward: 13.992. Std of Reward: 8.067. Training.
+[INFO] DoggyAgent. Step: 1640000. Time Elapsed: 6061.531 s. Mean Reward: 14.606. Std of Reward: 7.839. Training.
+[INFO] DoggyAgent. Step: 1642000. Time Elapsed: 6076.094 s. Mean Reward: 13.635. Std of Reward: 9.074. Training.
+[INFO] DoggyAgent. Step: 1644000. Time Elapsed: 6089.912 s. Mean Reward: 12.327. Std of Reward: 9.639. Training.
+[INFO] DoggyAgent. Step: 1646000. Time Elapsed: 6103.974 s. Mean Reward: 15.417. Std of Reward: 9.526. Training.
+[INFO] DoggyAgent. Step: 1648000. Time Elapsed: 6120.014 s. Mean Reward: 14.139. Std of Reward: 8.952. Training.
+[INFO] DoggyAgent. Step: 1650000. Time Elapsed: 6134.366 s. Mean Reward: 14.209. Std of Reward: 9.557. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 21:16:20.875000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1649964.onnx
+[INFO] DoggyAgent. Step: 1652000. Time Elapsed: 6149.571 s. Mean Reward: 12.928. Std of Reward: 11.468. Training.
+[INFO] DoggyAgent. Step: 1654000. Time Elapsed: 6163.966 s. Mean Reward: 16.221. Std of Reward: 10.474. Training.
+[INFO] DoggyAgent. Step: 1656000. Time Elapsed: 6178.115 s. Mean Reward: 12.625. Std of Reward: 9.839. Training.
+[INFO] DoggyAgent. Step: 1658000. Time Elapsed: 6193.826 s. Mean Reward: 17.357. Std of Reward: 8.062. Training.
+[INFO] DoggyAgent. Step: 1660000. Time Elapsed: 6207.744 s. Mean Reward: 13.353. Std of Reward: 10.275. Training.
+[INFO] DoggyAgent. Step: 1662000. Time Elapsed: 6221.885 s. Mean Reward: 15.627. Std of Reward: 8.436. Training.
+[INFO] DoggyAgent. Step: 1664000. Time Elapsed: 6235.696 s. Mean Reward: 12.326. Std of Reward: 9.217. Training.
+[INFO] DoggyAgent. Step: 1666000. Time Elapsed: 6249.527 s. Mean Reward: 20.559. Std of Reward: 4.672. Training.
+[INFO] DoggyAgent. Step: 1668000. Time Elapsed: 6264.974 s. Mean Reward: 18.764. Std of Reward: 5.775. Training.
+[INFO] DoggyAgent. Step: 1670000. Time Elapsed: 6278.980 s. Mean Reward: 11.853. Std of Reward: 8.727. Training.
+[INFO] DoggyAgent. Step: 1672000. Time Elapsed: 6292.422 s. Mean Reward: 12.271. Std of Reward: 10.190. Training.
+[INFO] DoggyAgent. Step: 1674000. Time Elapsed: 6306.476 s. Mean Reward: 15.991. Std of Reward: 7.130. Training.
+[INFO] DoggyAgent. Step: 1676000. Time Elapsed: 6320.073 s. Mean Reward: 13.205. Std of Reward: 8.815. Training.
+[INFO] DoggyAgent. Step: 1678000. Time Elapsed: 6335.486 s. Mean Reward: 13.174. Std of Reward: 7.995. Training.
+[INFO] DoggyAgent. Step: 1680000. Time Elapsed: 6349.559 s. Mean Reward: 10.879. Std of Reward: 11.206. Training.
+[INFO] DoggyAgent. Step: 1682000. Time Elapsed: 6363.064 s. Mean Reward: 13.332. Std of Reward: 8.973. Training.
+[INFO] DoggyAgent. Step: 1684000. Time Elapsed: 6377.994 s. Mean Reward: 9.425. Std of Reward: 9.511. Training.
+[INFO] DoggyAgent. Step: 1686000. Time Elapsed: 6670.072 s. Mean Reward: 15.245. Std of Reward: 9.258. Training.
+[INFO] DoggyAgent. Step: 1688000. Time Elapsed: 6684.614 s. Mean Reward: 18.127. Std of Reward: 7.589. Training.
+[INFO] DoggyAgent. Step: 1690000. Time Elapsed: 6699.684 s. Mean Reward: 17.182. Std of Reward: 7.032. Training.
+[INFO] DoggyAgent. Step: 1692000. Time Elapsed: 6713.148 s. Mean Reward: 13.610. Std of Reward: 8.581. Training.
+[INFO] DoggyAgent. Step: 1694000. Time Elapsed: 6726.720 s. Mean Reward: 12.570. Std of Reward: 10.107. Training.
+[INFO] DoggyAgent. Step: 1696000. Time Elapsed: 6740.521 s. Mean Reward: 15.064. Std of Reward: 9.293. Training.
+[INFO] DoggyAgent. Step: 1698000. Time Elapsed: 6754.575 s. Mean Reward: 14.892. Std of Reward: 8.643. Training.
+[INFO] DoggyAgent. Step: 1700000. Time Elapsed: 6769.768 s. Mean Reward: 8.856. Std of Reward: 10.508. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 21:26:56.277000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1699974.onnx
+[INFO] DoggyAgent. Step: 1702000. Time Elapsed: 6785.231 s. Mean Reward: 17.223. Std of Reward: 5.857. Training.
+[INFO] DoggyAgent. Step: 1704000. Time Elapsed: 6798.645 s. Mean Reward: 16.908. Std of Reward: 7.651. Training.
+[INFO] DoggyAgent. Step: 1706000. Time Elapsed: 6812.239 s. Mean Reward: 15.900. Std of Reward: 9.376. Training.
+[INFO] DoggyAgent. Step: 1708000. Time Elapsed: 6825.610 s. Mean Reward: 14.229. Std of Reward: 10.498. Training.
+[INFO] DoggyAgent. Step: 1710000. Time Elapsed: 6840.887 s. Mean Reward: 17.107. Std of Reward: 7.613. Training.
+[INFO] DoggyAgent. Step: 1712000. Time Elapsed: 6854.703 s. Mean Reward: 13.003. Std of Reward: 9.609. Training.
+[INFO] DoggyAgent. Step: 1714000. Time Elapsed: 6868.926 s. Mean Reward: 13.048. Std of Reward: 10.901. Training.
+[INFO] DoggyAgent. Step: 1716000. Time Elapsed: 6882.656 s. Mean Reward: 14.431. Std of Reward: 8.751. Training.
+[INFO] DoggyAgent. Step: 1718000. Time Elapsed: 6896.545 s. Mean Reward: 15.623. Std of Reward: 10.611. Training.
+[INFO] DoggyAgent. Step: 1720000. Time Elapsed: 6912.053 s. Mean Reward: 15.340. Std of Reward: 7.428. Training.
+[INFO] DoggyAgent. Step: 1722000. Time Elapsed: 6925.749 s. Mean Reward: 13.816. Std of Reward: 9.031. Training.
+[INFO] DoggyAgent. Step: 1724000. Time Elapsed: 6940.098 s. Mean Reward: 18.972. Std of Reward: 7.051. Training.
+[INFO] DoggyAgent. Step: 1726000. Time Elapsed: 6954.018 s. Mean Reward: 15.289. Std of Reward: 7.519. Training.
+[INFO] DoggyAgent. Step: 1728000. Time Elapsed: 6968.269 s. Mean Reward: 10.894. Std of Reward: 12.222. Training.
+[INFO] DoggyAgent. Step: 1730000. Time Elapsed: 6983.935 s. Mean Reward: 14.825. Std of Reward: 8.817. Training.
+[INFO] DoggyAgent. Step: 1732000. Time Elapsed: 6997.978 s. Mean Reward: 13.299. Std of Reward: 9.895. Training.
+[INFO] DoggyAgent. Step: 1734000. Time Elapsed: 7011.989 s. Mean Reward: 15.579. Std of Reward: 9.758. Training.
+[INFO] DoggyAgent. Step: 1736000. Time Elapsed: 7026.260 s. Mean Reward: 14.605. Std of Reward: 9.737. Training.
+[INFO] DoggyAgent. Step: 1738000. Time Elapsed: 7040.176 s. Mean Reward: 16.598. Std of Reward: 9.393. Training.
+[INFO] DoggyAgent. Step: 1740000. Time Elapsed: 7055.342 s. Mean Reward: 14.259. Std of Reward: 9.137. Training.
+[INFO] DoggyAgent. Step: 1742000. Time Elapsed: 7068.895 s. Mean Reward: 14.520. Std of Reward: 9.618. Training.
+[INFO] DoggyAgent. Step: 1744000. Time Elapsed: 7082.806 s. Mean Reward: 15.467. Std of Reward: 6.676. Training.
+[INFO] DoggyAgent. Step: 1746000. Time Elapsed: 7097.350 s. Mean Reward: 16.790. Std of Reward: 7.312. Training.
+[INFO] DoggyAgent. Step: 1748000. Time Elapsed: 7111.001 s. Mean Reward: 13.766. Std of Reward: 9.847. Training.
+[INFO] DoggyAgent. Step: 1750000. Time Elapsed: 7126.786 s. Mean Reward: 15.533. Std of Reward: 7.758. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 21:32:53.295000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1749981.onnx
+[INFO] DoggyAgent. Step: 1752000. Time Elapsed: 7141.872 s. Mean Reward: 14.282. Std of Reward: 9.289. Training.
+[INFO] DoggyAgent. Step: 1754000. Time Elapsed: 7156.084 s. Mean Reward: 13.277. Std of Reward: 10.269. Training.
+[INFO] DoggyAgent. Step: 1756000. Time Elapsed: 7170.175 s. Mean Reward: 14.815. Std of Reward: 10.696. Training.
+[INFO] DoggyAgent. Step: 1758000. Time Elapsed: 7184.167 s. Mean Reward: 11.676. Std of Reward: 9.306. Training.
+[INFO] DoggyAgent. Step: 1760000. Time Elapsed: 7197.987 s. Mean Reward: 15.276. Std of Reward: 7.860. Training.
+[INFO] DoggyAgent. Step: 1762000. Time Elapsed: 7214.283 s. Mean Reward: 12.498. Std of Reward: 10.318. Training.
+[INFO] DoggyAgent. Step: 1764000. Time Elapsed: 7228.139 s. Mean Reward: 12.513. Std of Reward: 10.428. Training.
+[INFO] DoggyAgent. Step: 1766000. Time Elapsed: 7241.992 s. Mean Reward: 17.832. Std of Reward: 8.062. Training.
+[INFO] DoggyAgent. Step: 1768000. Time Elapsed: 7255.724 s. Mean Reward: 12.295. Std of Reward: 10.747. Training.
+[INFO] DoggyAgent. Step: 1770000. Time Elapsed: 7269.709 s. Mean Reward: 12.129. Std of Reward: 9.663. Training.
+[INFO] DoggyAgent. Step: 1772000. Time Elapsed: 7285.493 s. Mean Reward: 19.052. Std of Reward: 6.767. Training.
+[INFO] DoggyAgent. Step: 1774000. Time Elapsed: 7299.163 s. Mean Reward: 13.300. Std of Reward: 9.302. Training.
+[INFO] DoggyAgent. Step: 1776000. Time Elapsed: 7313.359 s. Mean Reward: 17.377. Std of Reward: 7.072. Training.
+[INFO] DoggyAgent. Step: 1778000. Time Elapsed: 7327.295 s. Mean Reward: 18.425. Std of Reward: 7.859. Training.
+[INFO] DoggyAgent. Step: 1780000. Time Elapsed: 7341.062 s. Mean Reward: 10.879. Std of Reward: 10.917. Training.
+[INFO] DoggyAgent. Step: 1782000. Time Elapsed: 7356.996 s. Mean Reward: 14.073. Std of Reward: 9.835. Training.
+[INFO] DoggyAgent. Step: 1784000. Time Elapsed: 7370.939 s. Mean Reward: 13.328. Std of Reward: 9.248. Training.
+[INFO] DoggyAgent. Step: 1786000. Time Elapsed: 7384.751 s. Mean Reward: 18.326. Std of Reward: 9.066. Training.
+[INFO] DoggyAgent. Step: 1788000. Time Elapsed: 7398.615 s. Mean Reward: 15.585. Std of Reward: 7.903. Training.
+[INFO] DoggyAgent. Step: 1790000. Time Elapsed: 7412.114 s. Mean Reward: 18.992. Std of Reward: 5.065. Training.
+[INFO] DoggyAgent. Step: 1792000. Time Elapsed: 7427.996 s. Mean Reward: 17.174. Std of Reward: 5.560. Training.
+[INFO] DoggyAgent. Step: 1794000. Time Elapsed: 7441.988 s. Mean Reward: 14.789. Std of Reward: 7.847. Training.
+[INFO] DoggyAgent. Step: 1796000. Time Elapsed: 7456.259 s. Mean Reward: 10.888. Std of Reward: 9.388. Training.
+[INFO] DoggyAgent. Step: 1798000. Time Elapsed: 7470.018 s. Mean Reward: 15.296. Std of Reward: 9.145. Training.
+[INFO] DoggyAgent. Step: 1800000. Time Elapsed: 7483.827 s. Mean Reward: 19.740. Std of Reward: 8.228. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 21:38:50.336000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1799996.onnx
+[INFO] DoggyAgent. Step: 1802000. Time Elapsed: 7501.168 s. Mean Reward: 14.684. Std of Reward: 9.945. Training.
+[INFO] DoggyAgent. Step: 1804000. Time Elapsed: 7514.780 s. Mean Reward: 17.485. Std of Reward: 7.866. Training.
+[INFO] DoggyAgent. Step: 1806000. Time Elapsed: 7528.680 s. Mean Reward: 17.025. Std of Reward: 10.321. Training.
+[INFO] DoggyAgent. Step: 1808000. Time Elapsed: 7542.989 s. Mean Reward: 15.418. Std of Reward: 7.511. Training.
+[INFO] DoggyAgent. Step: 1810000. Time Elapsed: 7557.175 s. Mean Reward: 18.254. Std of Reward: 8.228. Training.
+[INFO] DoggyAgent. Step: 1812000. Time Elapsed: 7573.007 s. Mean Reward: 15.111. Std of Reward: 9.533. Training.
+[INFO] DoggyAgent. Step: 1814000. Time Elapsed: 7587.198 s. Mean Reward: 15.590. Std of Reward: 7.475. Training.
+[INFO] DoggyAgent. Step: 1816000. Time Elapsed: 7600.883 s. Mean Reward: 17.849. Std of Reward: 8.588. Training.
+[INFO] DoggyAgent. Step: 1818000. Time Elapsed: 7614.513 s. Mean Reward: 14.056. Std of Reward: 9.479. Training.
+[INFO] DoggyAgent. Step: 1820000. Time Elapsed: 7628.907 s. Mean Reward: 17.279. Std of Reward: 8.971. Training.
+[INFO] DoggyAgent. Step: 1822000. Time Elapsed: 7645.052 s. Mean Reward: 15.709. Std of Reward: 9.776. Training.
+[INFO] DoggyAgent. Step: 1824000. Time Elapsed: 7659.420 s. Mean Reward: 17.958. Std of Reward: 7.597. Training.
+[INFO] DoggyAgent. Step: 1826000. Time Elapsed: 7673.594 s. Mean Reward: 12.579. Std of Reward: 9.086. Training.
+[INFO] DoggyAgent. Step: 1828000. Time Elapsed: 7688.135 s. Mean Reward: 19.096. Std of Reward: 7.639. Training.
+[INFO] DoggyAgent. Step: 1830000. Time Elapsed: 7701.697 s. Mean Reward: 13.183. Std of Reward: 11.218. Training.
+[INFO] DoggyAgent. Step: 1832000. Time Elapsed: 7717.496 s. Mean Reward: 13.845. Std of Reward: 9.126. Training.
+[INFO] DoggyAgent. Step: 1834000. Time Elapsed: 7731.748 s. Mean Reward: 14.644. Std of Reward: 8.788. Training.
+[INFO] DoggyAgent. Step: 1836000. Time Elapsed: 7746.205 s. Mean Reward: 10.339. Std of Reward: 9.302. Training.
+[INFO] DoggyAgent. Step: 1838000. Time Elapsed: 7759.593 s. Mean Reward: 13.765. Std of Reward: 8.796. Training.
+[INFO] DoggyAgent. Step: 1840000. Time Elapsed: 7773.845 s. Mean Reward: 17.281. Std of Reward: 8.914. Training.
+[INFO] DoggyAgent. Step: 1842000. Time Elapsed: 7788.146 s. Mean Reward: 13.215. Std of Reward: 9.919. Training.
+[INFO] DoggyAgent. Step: 1844000. Time Elapsed: 7804.147 s. Mean Reward: 14.173. Std of Reward: 9.049. Training.
+[INFO] DoggyAgent. Step: 1846000. Time Elapsed: 7818.084 s. Mean Reward: 16.620. Std of Reward: 7.541. Training.
+[INFO] DoggyAgent. Step: 1848000. Time Elapsed: 7832.178 s. Mean Reward: 16.317. Std of Reward: 8.410. Training.
+[INFO] DoggyAgent. Step: 1850000. Time Elapsed: 7846.050 s. Mean Reward: 14.411. Std of Reward: 10.171. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 21:44:52.559000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1849983.onnx
+[INFO] DoggyAgent. Step: 1852000. Time Elapsed: 7861.913 s. Mean Reward: 14.722. Std of Reward: 9.321. Training.
+[INFO] DoggyAgent. Step: 1854000. Time Elapsed: 7877.496 s. Mean Reward: 13.647. Std of Reward: 9.486. Training.
+[INFO] DoggyAgent. Step: 1856000. Time Elapsed: 7891.555 s. Mean Reward: 14.103. Std of Reward: 8.759. Training.
+[INFO] DoggyAgent. Step: 1858000. Time Elapsed: 7905.681 s. Mean Reward: 11.668. Std of Reward: 10.057. Training.
+[INFO] DoggyAgent. Step: 1860000. Time Elapsed: 7919.800 s. Mean Reward: 15.835. Std of Reward: 8.952. Training.
+[INFO] DoggyAgent. Step: 1862000. Time Elapsed: 7933.982 s. Mean Reward: 17.819. Std of Reward: 5.008. Training.
+[INFO] DoggyAgent. Step: 1864000. Time Elapsed: 7950.322 s. Mean Reward: 10.872. Std of Reward: 10.625. Training.
+[INFO] DoggyAgent. Step: 1866000. Time Elapsed: 7964.352 s. Mean Reward: 12.342. Std of Reward: 10.199. Training.
+[INFO] DoggyAgent. Step: 1868000. Time Elapsed: 7978.077 s. Mean Reward: 20.544. Std of Reward: 4.991. Training.
+[INFO] DoggyAgent. Step: 1870000. Time Elapsed: 7991.727 s. Mean Reward: 16.805. Std of Reward: 9.188. Training.
+[INFO] DoggyAgent. Step: 1872000. Time Elapsed: 8005.948 s. Mean Reward: 14.172. Std of Reward: 8.237. Training.
+[INFO] DoggyAgent. Step: 1874000. Time Elapsed: 8022.074 s. Mean Reward: 15.839. Std of Reward: 8.929. Training.
+[INFO] DoggyAgent. Step: 1876000. Time Elapsed: 8036.278 s. Mean Reward: 10.200. Std of Reward: 10.154. Training.
+[INFO] DoggyAgent. Step: 1878000. Time Elapsed: 8049.882 s. Mean Reward: 16.003. Std of Reward: 8.709. Training.
+[INFO] DoggyAgent. Step: 1880000. Time Elapsed: 8064.361 s. Mean Reward: 12.951. Std of Reward: 9.714. Training.
+[INFO] DoggyAgent. Step: 1882000. Time Elapsed: 8078.317 s. Mean Reward: 18.713. Std of Reward: 6.263. Training.
+[INFO] DoggyAgent. Step: 1884000. Time Elapsed: 8093.319 s. Mean Reward: 13.241. Std of Reward: 8.625. Training.
+[INFO] DoggyAgent. Step: 1886000. Time Elapsed: 8107.601 s. Mean Reward: 17.025. Std of Reward: 6.001. Training.
+[INFO] DoggyAgent. Step: 1888000. Time Elapsed: 8121.210 s. Mean Reward: 13.612. Std of Reward: 10.010. Training.
+[INFO] DoggyAgent. Step: 1890000. Time Elapsed: 8135.283 s. Mean Reward: 15.090. Std of Reward: 8.449. Training.
+[INFO] DoggyAgent. Step: 1892000. Time Elapsed: 8149.452 s. Mean Reward: 11.833. Std of Reward: 10.627. Training.
+[INFO] DoggyAgent. Step: 1894000. Time Elapsed: 8165.252 s. Mean Reward: 14.434. Std of Reward: 7.766. Training.
+[INFO] DoggyAgent. Step: 1896000. Time Elapsed: 8179.269 s. Mean Reward: 14.983. Std of Reward: 9.682. Training.
+[INFO] DoggyAgent. Step: 1898000. Time Elapsed: 8193.406 s. Mean Reward: 12.592. Std of Reward: 9.577. Training.
+[INFO] DoggyAgent. Step: 1900000. Time Elapsed: 8207.540 s. Mean Reward: 13.973. Std of Reward: 9.453. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 21:50:54.052000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1899952.onnx
+[INFO] DoggyAgent. Step: 1902000. Time Elapsed: 8222.999 s. Mean Reward: 13.066. Std of Reward: 9.941. Training.
+[INFO] DoggyAgent. Step: 1904000. Time Elapsed: 8238.870 s. Mean Reward: 16.396. Std of Reward: 9.653. Training.
+[INFO] DoggyAgent. Step: 1906000. Time Elapsed: 8252.353 s. Mean Reward: 15.666. Std of Reward: 9.798. Training.
+[INFO] DoggyAgent. Step: 1908000. Time Elapsed: 8265.829 s. Mean Reward: 13.759. Std of Reward: 10.274. Training.
+[INFO] DoggyAgent. Step: 1910000. Time Elapsed: 8279.579 s. Mean Reward: 16.207. Std of Reward: 8.740. Training.
+[INFO] DoggyAgent. Step: 1912000. Time Elapsed: 8293.229 s. Mean Reward: 13.500. Std of Reward: 8.595. Training.
+[INFO] DoggyAgent. Step: 1914000. Time Elapsed: 8307.142 s. Mean Reward: 15.885. Std of Reward: 9.078. Training.
+[INFO] DoggyAgent. Step: 1916000. Time Elapsed: 8323.326 s. Mean Reward: 15.572. Std of Reward: 9.474. Training.
+[INFO] DoggyAgent. Step: 1918000. Time Elapsed: 8337.682 s. Mean Reward: 15.138. Std of Reward: 9.436. Training.
+[INFO] DoggyAgent. Step: 1920000. Time Elapsed: 8351.637 s. Mean Reward: 17.048. Std of Reward: 8.507. Training.
+[INFO] DoggyAgent. Step: 1922000. Time Elapsed: 8365.662 s. Mean Reward: 12.050. Std of Reward: 8.843. Training.
+[INFO] DoggyAgent. Step: 1924000. Time Elapsed: 8380.327 s. Mean Reward: 14.782. Std of Reward: 8.617. Training.
+[INFO] DoggyAgent. Step: 1926000. Time Elapsed: 8395.985 s. Mean Reward: 16.412. Std of Reward: 8.074. Training.
+[INFO] DoggyAgent. Step: 1928000. Time Elapsed: 8410.084 s. Mean Reward: 14.306. Std of Reward: 8.600. Training.
+[INFO] DoggyAgent. Step: 1930000. Time Elapsed: 8424.476 s. Mean Reward: 13.662. Std of Reward: 9.381. Training.
+[INFO] DoggyAgent. Step: 1932000. Time Elapsed: 8438.536 s. Mean Reward: 16.960. Std of Reward: 7.694. Training.
+[INFO] DoggyAgent. Step: 1934000. Time Elapsed: 8452.433 s. Mean Reward: 16.153. Std of Reward: 6.837. Training.
+[INFO] DoggyAgent. Step: 1936000. Time Elapsed: 8468.167 s. Mean Reward: 17.319. Std of Reward: 9.687. Training.
+[INFO] DoggyAgent. Step: 1938000. Time Elapsed: 8482.542 s. Mean Reward: 17.786. Std of Reward: 5.778. Training.
+[INFO] DoggyAgent. Step: 1940000. Time Elapsed: 8497.361 s. Mean Reward: 17.871. Std of Reward: 7.722. Training.
+[INFO] DoggyAgent. Step: 1942000. Time Elapsed: 8511.494 s. Mean Reward: 13.582. Std of Reward: 8.896. Training.
+[INFO] DoggyAgent. Step: 1944000. Time Elapsed: 8525.684 s. Mean Reward: 13.506. Std of Reward: 9.538. Training.
+[INFO] DoggyAgent. Step: 1946000. Time Elapsed: 8541.649 s. Mean Reward: 16.658. Std of Reward: 8.627. Training.
+[INFO] DoggyAgent. Step: 1948000. Time Elapsed: 8555.580 s. Mean Reward: 13.208. Std of Reward: 9.612. Training.
+[INFO] DoggyAgent. Step: 1950000. Time Elapsed: 8570.010 s. Mean Reward: 18.200. Std of Reward: 4.700. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 21:56:56.520000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1949949.onnx
+[INFO] DoggyAgent. Step: 1952000. Time Elapsed: 8584.895 s. Mean Reward: 10.943. Std of Reward: 10.727. Training.
+[INFO] DoggyAgent. Step: 1954000. Time Elapsed: 8598.805 s. Mean Reward: 18.404. Std of Reward: 8.514. Training.
+[INFO] DoggyAgent. Step: 1956000. Time Elapsed: 8614.405 s. Mean Reward: 17.281. Std of Reward: 7.929. Training.
+[INFO] DoggyAgent. Step: 1958000. Time Elapsed: 8627.643 s. Mean Reward: 14.227. Std of Reward: 9.809. Training.
+[INFO] DoggyAgent. Step: 1960000. Time Elapsed: 8641.799 s. Mean Reward: 16.573. Std of Reward: 9.056. Training.
+[INFO] DoggyAgent. Step: 1962000. Time Elapsed: 8655.264 s. Mean Reward: 13.724. Std of Reward: 9.321. Training.
+[INFO] DoggyAgent. Step: 1964000. Time Elapsed: 8668.850 s. Mean Reward: 16.420. Std of Reward: 10.301. Training.
+[INFO] DoggyAgent. Step: 1966000. Time Elapsed: 8684.795 s. Mean Reward: 14.601. Std of Reward: 8.750. Training.
+[INFO] DoggyAgent. Step: 1968000. Time Elapsed: 8698.364 s. Mean Reward: 11.829. Std of Reward: 9.166. Training.
+[INFO] DoggyAgent. Step: 1970000. Time Elapsed: 8711.999 s. Mean Reward: 18.714. Std of Reward: 5.957. Training.
+[INFO] DoggyAgent. Step: 1972000. Time Elapsed: 8726.026 s. Mean Reward: 13.467. Std of Reward: 11.033. Training.
+[INFO] DoggyAgent. Step: 1974000. Time Elapsed: 8740.650 s. Mean Reward: 15.969. Std of Reward: 6.581. Training.
+[INFO] DoggyAgent. Step: 1976000. Time Elapsed: 8756.708 s. Mean Reward: 13.894. Std of Reward: 9.794. Training.
+[INFO] DoggyAgent. Step: 1978000. Time Elapsed: 8770.519 s. Mean Reward: 14.583. Std of Reward: 8.885. Training.
+[INFO] DoggyAgent. Step: 1980000. Time Elapsed: 8784.605 s. Mean Reward: 12.682. Std of Reward: 9.996. Training.
+[INFO] DoggyAgent. Step: 1982000. Time Elapsed: 8798.483 s. Mean Reward: 15.960. Std of Reward: 9.136. Training.
+[INFO] DoggyAgent. Step: 1984000. Time Elapsed: 8813.202 s. Mean Reward: 16.840. Std of Reward: 7.168. Training.
+[INFO] DoggyAgent. Step: 1986000. Time Elapsed: 8827.383 s. Mean Reward: 17.545. Std of Reward: 5.624. Training.
+[INFO] DoggyAgent. Step: 1988000. Time Elapsed: 8843.279 s. Mean Reward: 13.846. Std of Reward: 8.200. Training.
+[INFO] DoggyAgent. Step: 1990000. Time Elapsed: 8857.164 s. Mean Reward: 14.061. Std of Reward: 10.380. Training.
+[INFO] DoggyAgent. Step: 1992000. Time Elapsed: 8871.464 s. Mean Reward: 16.217. Std of Reward: 11.895. Training.
+[INFO] DoggyAgent. Step: 1994000. Time Elapsed: 8885.298 s. Mean Reward: 14.223. Std of Reward: 8.653. Training.
+[INFO] DoggyAgent. Step: 1996000. Time Elapsed: 8899.294 s. Mean Reward: 19.061. Std of Reward: 6.287. Training.
+[INFO] DoggyAgent. Step: 1998000. Time Elapsed: 8915.046 s. Mean Reward: 15.482. Std of Reward: 9.140. Training.
+[INFO] DoggyAgent. Step: 2000000. Time Elapsed: 8929.349 s. Mean Reward: 14.277. Std of Reward: 8.458. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 22:02:55.859000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-1999993.onnx
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 22:02:57.086000 1807700 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2000010.onnx
+[INFO] Copied results/DogSmart1/DoggyAgent/DoggyAgent-2000010.onnx to results/DogSmart1/DoggyAgent.onnx.
+(venv) sohatiy@sohatiy:~/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project$ mlagents-learn dog_config.yaml --run-id=DogSmart1 --resume
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+        
+ Version information:
+  ml-agents: 1.1.0,
+  ml-agents-envs: 1.1.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.9.1+cu128
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 3.0.0-exp.1 and communication version 1.5.0
+[INFO] Connected new brain: DoggyAgent?team=0
+[INFO] Hyperparameters for behavior name DoggyAgent: 
+	trainer_type:	ppo
+	hyperparameters:	
+	  batch_size:	1024
+	  buffer_size:	10240
+	  learning_rate:	0.0003
+	  beta:	0.0005
+	  epsilon:	0.2
+	  lambd:	0.95
+	  num_epoch:	3
+	  shared_critic:	False
+	  learning_rate_schedule:	linear
+	  beta_schedule:	linear
+	  epsilon_schedule:	linear
+	checkpoint_interval:	50000
+	network_settings:	
+	  normalize:	True
+	  hidden_units:	128
+	  num_layers:	2
+	  vis_encode_type:	simple
+	  memory:	None
+	  goal_conditioning_type:	hyper
+	  deterministic:	False
+	reward_signals:	
+	  extrinsic:	
+	    gamma:	0.99
+	    strength:	1.0
+	    network_settings:	
+	      normalize:	False
+	      hidden_units:	128
+	      num_layers:	2
+	      vis_encode_type:	simple
+	      memory:	None
+	      goal_conditioning_type:	hyper
+	      deterministic:	False
+	init_path:	None
+	keep_checkpoints:	5
+	even_checkpoints:	False
+	max_steps:	2500000
+	time_horizon:	64
+	summary_freq:	2000
+	threaded:	False
+	self_play:	None
+	behavioral_cloning:	None
+[INFO] Resuming from results/DogSmart1/DoggyAgent.
+[INFO] Resuming training from step 2000010.
+[INFO] DoggyAgent. Step: 2002000. Time Elapsed: 25.079 s. Mean Reward: 18.841. Std of Reward: 7.482. Training.
+[INFO] DoggyAgent. Step: 2004000. Time Elapsed: 38.940 s. Mean Reward: 12.465. Std of Reward: 7.520. Training.
+[INFO] DoggyAgent. Step: 2006000. Time Elapsed: 52.518 s. Mean Reward: 16.389. Std of Reward: 7.973. Training.
+[INFO] DoggyAgent. Step: 2008000. Time Elapsed: 66.548 s. Mean Reward: 13.093. Std of Reward: 10.015. Training.
+[INFO] DoggyAgent. Step: 2010000. Time Elapsed: 80.629 s. Mean Reward: 14.441. Std of Reward: 8.844. Training.
+[INFO] DoggyAgent. Step: 2012000. Time Elapsed: 96.541 s. Mean Reward: 12.928. Std of Reward: 8.694. Training.
+[INFO] DoggyAgent. Step: 2014000. Time Elapsed: 110.592 s. Mean Reward: 14.572. Std of Reward: 11.213. Training.
+[INFO] DoggyAgent. Step: 2016000. Time Elapsed: 124.497 s. Mean Reward: 15.273. Std of Reward: 10.585. Training.
+[INFO] DoggyAgent. Step: 2018000. Time Elapsed: 139.829 s. Mean Reward: 15.784. Std of Reward: 6.963. Training.
+[INFO] DoggyAgent. Step: 2020000. Time Elapsed: 154.381 s. Mean Reward: 19.074. Std of Reward: 4.147. Training.
+[INFO] DoggyAgent. Step: 2022000. Time Elapsed: 170.037 s. Mean Reward: 12.946. Std of Reward: 7.296. Training.
+[INFO] DoggyAgent. Step: 2024000. Time Elapsed: 183.799 s. Mean Reward: 17.500. Std of Reward: 7.971. Training.
+[INFO] DoggyAgent. Step: 2026000. Time Elapsed: 197.677 s. Mean Reward: 12.893. Std of Reward: 9.767. Training.
+[INFO] DoggyAgent. Step: 2028000. Time Elapsed: 211.450 s. Mean Reward: 12.923. Std of Reward: 9.967. Training.
+[INFO] DoggyAgent. Step: 2030000. Time Elapsed: 224.952 s. Mean Reward: 16.459. Std of Reward: 8.459. Training.
+[INFO] DoggyAgent. Step: 2032000. Time Elapsed: 240.979 s. Mean Reward: 18.165. Std of Reward: 6.786. Training.
+[INFO] DoggyAgent. Step: 2034000. Time Elapsed: 254.615 s. Mean Reward: 14.710. Std of Reward: 8.860. Training.
+[INFO] DoggyAgent. Step: 2036000. Time Elapsed: 268.529 s. Mean Reward: 17.860. Std of Reward: 8.497. Training.
+[INFO] DoggyAgent. Step: 2038000. Time Elapsed: 282.608 s. Mean Reward: 12.765. Std of Reward: 9.488. Training.
+[INFO] DoggyAgent. Step: 2040000. Time Elapsed: 297.004 s. Mean Reward: 17.134. Std of Reward: 7.532. Training.
+[INFO] DoggyAgent. Step: 2042000. Time Elapsed: 311.931 s. Mean Reward: 14.803. Std of Reward: 10.394. Training.
+[INFO] DoggyAgent. Step: 2044000. Time Elapsed: 325.947 s. Mean Reward: 16.017. Std of Reward: 8.339. Training.
+[INFO] DoggyAgent. Step: 2046000. Time Elapsed: 339.974 s. Mean Reward: 16.528. Std of Reward: 8.857. Training.
+[INFO] DoggyAgent. Step: 2048000. Time Elapsed: 353.256 s. Mean Reward: 18.112. Std of Reward: 5.514. Training.
+[INFO] DoggyAgent. Step: 2050000. Time Elapsed: 367.032 s. Mean Reward: 15.979. Std of Reward: 6.080. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 22:11:20.296000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2049944.onnx
+[INFO] DoggyAgent. Step: 2052000. Time Elapsed: 385.067 s. Mean Reward: 12.921. Std of Reward: 10.217. Training.
+[INFO] DoggyAgent. Step: 2054000. Time Elapsed: 399.726 s. Mean Reward: 14.246. Std of Reward: 9.774. Training.
+[INFO] DoggyAgent. Step: 2056000. Time Elapsed: 413.867 s. Mean Reward: 17.043. Std of Reward: 8.828. Training.
+[INFO] DoggyAgent. Step: 2058000. Time Elapsed: 427.801 s. Mean Reward: 15.543. Std of Reward: 8.432. Training.
+[INFO] DoggyAgent. Step: 2060000. Time Elapsed: 441.920 s. Mean Reward: 15.162. Std of Reward: 8.244. Training.
+[INFO] DoggyAgent. Step: 2062000. Time Elapsed: 457.863 s. Mean Reward: 16.576. Std of Reward: 8.947. Training.
+[INFO] DoggyAgent. Step: 2064000. Time Elapsed: 471.949 s. Mean Reward: 16.448. Std of Reward: 7.962. Training.
+[INFO] DoggyAgent. Step: 2066000. Time Elapsed: 486.230 s. Mean Reward: 16.728. Std of Reward: 7.824. Training.
+[INFO] DoggyAgent. Step: 2068000. Time Elapsed: 500.520 s. Mean Reward: 14.213. Std of Reward: 8.984. Training.
+[INFO] DoggyAgent. Step: 2070000. Time Elapsed: 514.950 s. Mean Reward: 16.942. Std of Reward: 8.773. Training.
+[INFO] DoggyAgent. Step: 2072000. Time Elapsed: 531.248 s. Mean Reward: 13.511. Std of Reward: 10.763. Training.
+[INFO] DoggyAgent. Step: 2074000. Time Elapsed: 545.420 s. Mean Reward: 15.135. Std of Reward: 8.572. Training.
+[INFO] DoggyAgent. Step: 2076000. Time Elapsed: 559.245 s. Mean Reward: 13.457. Std of Reward: 9.476. Training.
+[INFO] DoggyAgent. Step: 2078000. Time Elapsed: 574.101 s. Mean Reward: 17.175. Std of Reward: 7.902. Training.
+[INFO] DoggyAgent. Step: 2080000. Time Elapsed: 588.077 s. Mean Reward: 15.347. Std of Reward: 8.728. Training.
+[INFO] DoggyAgent. Step: 2082000. Time Elapsed: 602.224 s. Mean Reward: 16.806. Std of Reward: 8.037. Training.
+[INFO] DoggyAgent. Step: 2084000. Time Elapsed: 618.856 s. Mean Reward: 14.138. Std of Reward: 10.278. Training.
+[INFO] DoggyAgent. Step: 2086000. Time Elapsed: 633.287 s. Mean Reward: 16.081. Std of Reward: 8.949. Training.
+[INFO] DoggyAgent. Step: 2088000. Time Elapsed: 647.849 s. Mean Reward: 11.763. Std of Reward: 11.578. Training.
+[INFO] DoggyAgent. Step: 2090000. Time Elapsed: 661.834 s. Mean Reward: 13.560. Std of Reward: 11.109. Training.
+[INFO] DoggyAgent. Step: 2092000. Time Elapsed: 676.339 s. Mean Reward: 11.199. Std of Reward: 10.444. Training.
+[INFO] DoggyAgent. Step: 2094000. Time Elapsed: 692.874 s. Mean Reward: 11.597. Std of Reward: 11.020. Training.
+[INFO] DoggyAgent. Step: 2096000. Time Elapsed: 708.167 s. Mean Reward: 15.854. Std of Reward: 8.052. Training.
+[INFO] DoggyAgent. Step: 2098000. Time Elapsed: 722.861 s. Mean Reward: 14.184. Std of Reward: 9.341. Training.
+[INFO] DoggyAgent. Step: 2100000. Time Elapsed: 738.263 s. Mean Reward: 16.310. Std of Reward: 8.324. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 22:17:31.386000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2099958.onnx
+[INFO] DoggyAgent. Step: 2102000. Time Elapsed: 754.804 s. Mean Reward: 12.992. Std of Reward: 9.740. Training.
+[INFO] DoggyAgent. Step: 2104000. Time Elapsed: 772.032 s. Mean Reward: 16.111. Std of Reward: 9.582. Training.
+[INFO] DoggyAgent. Step: 2106000. Time Elapsed: 787.722 s. Mean Reward: 14.678. Std of Reward: 7.242. Training.
+[INFO] DoggyAgent. Step: 2108000. Time Elapsed: 802.907 s. Mean Reward: 14.075. Std of Reward: 8.835. Training.
+[INFO] DoggyAgent. Step: 2110000. Time Elapsed: 818.970 s. Mean Reward: 15.368. Std of Reward: 8.193. Training.
+[INFO] DoggyAgent. Step: 2112000. Time Elapsed: 833.709 s. Mean Reward: 14.230. Std of Reward: 10.033. Training.
+[INFO] DoggyAgent. Step: 2114000. Time Elapsed: 851.625 s. Mean Reward: 18.016. Std of Reward: 6.727. Training.
+[INFO] DoggyAgent. Step: 2116000. Time Elapsed: 867.046 s. Mean Reward: 19.610. Std of Reward: 6.086. Training.
+[INFO] DoggyAgent. Step: 2118000. Time Elapsed: 882.682 s. Mean Reward: 11.812. Std of Reward: 10.937. Training.
+[INFO] DoggyAgent. Step: 2120000. Time Elapsed: 897.752 s. Mean Reward: 11.391. Std of Reward: 8.974. Training.
+[INFO] DoggyAgent. Step: 2122000. Time Elapsed: 912.942 s. Mean Reward: 16.722. Std of Reward: 8.292. Training.
+[INFO] DoggyAgent. Step: 2124000. Time Elapsed: 931.175 s. Mean Reward: 18.974. Std of Reward: 7.475. Training.
+[INFO] DoggyAgent. Step: 2126000. Time Elapsed: 947.964 s. Mean Reward: 15.384. Std of Reward: 9.023. Training.
+[INFO] DoggyAgent. Step: 2128000. Time Elapsed: 964.565 s. Mean Reward: 12.594. Std of Reward: 10.654. Training.
+[INFO] DoggyAgent. Step: 2130000. Time Elapsed: 980.435 s. Mean Reward: 13.469. Std of Reward: 9.130. Training.
+[INFO] DoggyAgent. Step: 2132000. Time Elapsed: 995.756 s. Mean Reward: 14.705. Std of Reward: 8.463. Training.
+[INFO] DoggyAgent. Step: 2134000. Time Elapsed: 1013.422 s. Mean Reward: 18.944. Std of Reward: 5.851. Training.
+[INFO] DoggyAgent. Step: 2136000. Time Elapsed: 1028.738 s. Mean Reward: 15.613. Std of Reward: 9.326. Training.
+[INFO] DoggyAgent. Step: 2138000. Time Elapsed: 1044.796 s. Mean Reward: 11.424. Std of Reward: 10.264. Training.
+[INFO] DoggyAgent. Step: 2140000. Time Elapsed: 1060.469 s. Mean Reward: 17.326. Std of Reward: 7.718. Training.
+[INFO] DoggyAgent. Step: 2142000. Time Elapsed: 1076.462 s. Mean Reward: 12.696. Std of Reward: 9.492. Training.
+[INFO] DoggyAgent. Step: 2144000. Time Elapsed: 1092.978 s. Mean Reward: 17.025. Std of Reward: 7.198. Training.
+[INFO] DoggyAgent. Step: 2146000. Time Elapsed: 1108.496 s. Mean Reward: 16.802. Std of Reward: 9.288. Training.
+[INFO] DoggyAgent. Step: 2148000. Time Elapsed: 1123.595 s. Mean Reward: 13.770. Std of Reward: 9.589. Training.
+[INFO] DoggyAgent. Step: 2150000. Time Elapsed: 1139.257 s. Mean Reward: 16.498. Std of Reward: 9.854. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 22:24:12.378000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2149960.onnx
+[INFO] DoggyAgent. Step: 2152000. Time Elapsed: 1155.448 s. Mean Reward: 17.153. Std of Reward: 5.629. Training.
+[INFO] DoggyAgent. Step: 2154000. Time Elapsed: 1170.976 s. Mean Reward: 17.270. Std of Reward: 8.943. Training.
+[INFO] DoggyAgent. Step: 2156000. Time Elapsed: 1187.585 s. Mean Reward: 14.049. Std of Reward: 8.040. Training.
+[INFO] DoggyAgent. Step: 2158000. Time Elapsed: 1203.085 s. Mean Reward: 16.369. Std of Reward: 8.085. Training.
+[INFO] DoggyAgent. Step: 2160000. Time Elapsed: 1218.099 s. Mean Reward: 12.796. Std of Reward: 11.047. Training.
+[INFO] DoggyAgent. Step: 2162000. Time Elapsed: 1233.478 s. Mean Reward: 12.064. Std of Reward: 9.070. Training.
+[INFO] DoggyAgent. Step: 2164000. Time Elapsed: 1248.214 s. Mean Reward: 17.085. Std of Reward: 7.212. Training.
+[INFO] DoggyAgent. Step: 2166000. Time Elapsed: 1265.751 s. Mean Reward: 12.543. Std of Reward: 10.418. Training.
+[INFO] DoggyAgent. Step: 2168000. Time Elapsed: 1281.422 s. Mean Reward: 15.937. Std of Reward: 9.005. Training.
+[INFO] DoggyAgent. Step: 2170000. Time Elapsed: 1297.027 s. Mean Reward: 13.848. Std of Reward: 10.236. Training.
+[INFO] DoggyAgent. Step: 2172000. Time Elapsed: 1312.632 s. Mean Reward: 15.275. Std of Reward: 9.627. Training.
+[INFO] DoggyAgent. Step: 2174000. Time Elapsed: 1327.910 s. Mean Reward: 14.089. Std of Reward: 9.233. Training.
+[INFO] DoggyAgent. Step: 2176000. Time Elapsed: 1344.135 s. Mean Reward: 16.555. Std of Reward: 7.987. Training.
+[INFO] DoggyAgent. Step: 2178000. Time Elapsed: 1358.980 s. Mean Reward: 16.138. Std of Reward: 7.707. Training.
+[INFO] DoggyAgent. Step: 2180000. Time Elapsed: 1374.200 s. Mean Reward: 18.437. Std of Reward: 6.253. Training.
+[INFO] DoggyAgent. Step: 2182000. Time Elapsed: 1389.657 s. Mean Reward: 14.374. Std of Reward: 8.437. Training.
+[INFO] DoggyAgent. Step: 2184000. Time Elapsed: 1404.858 s. Mean Reward: 15.429. Std of Reward: 8.474. Training.
+[INFO] DoggyAgent. Step: 2186000. Time Elapsed: 1422.023 s. Mean Reward: 16.558. Std of Reward: 7.579. Training.
+[INFO] DoggyAgent. Step: 2188000. Time Elapsed: 1436.654 s. Mean Reward: 18.003. Std of Reward: 8.513. Training.
+[INFO] DoggyAgent. Step: 2190000. Time Elapsed: 1452.762 s. Mean Reward: 17.326. Std of Reward: 7.273. Training.
+[INFO] DoggyAgent. Step: 2192000. Time Elapsed: 1467.425 s. Mean Reward: 13.353. Std of Reward: 9.339. Training.
+[INFO] DoggyAgent. Step: 2194000. Time Elapsed: 1482.150 s. Mean Reward: 16.382. Std of Reward: 7.723. Training.
+[INFO] DoggyAgent. Step: 2196000. Time Elapsed: 1498.658 s. Mean Reward: 15.876. Std of Reward: 8.047. Training.
+[INFO] DoggyAgent. Step: 2198000. Time Elapsed: 1513.278 s. Mean Reward: 17.466. Std of Reward: 9.676. Training.
+[INFO] DoggyAgent. Step: 2200000. Time Elapsed: 1528.631 s. Mean Reward: 16.701. Std of Reward: 9.411. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 22:30:41.753000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2199984.onnx
+[INFO] DoggyAgent. Step: 2202000. Time Elapsed: 1544.772 s. Mean Reward: 16.236. Std of Reward: 8.015. Training.
+[INFO] DoggyAgent. Step: 2204000. Time Elapsed: 1560.591 s. Mean Reward: 15.790. Std of Reward: 8.012. Training.
+[INFO] DoggyAgent. Step: 2206000. Time Elapsed: 1633.928 s. Mean Reward: 16.962. Std of Reward: 8.256. Training.
+[INFO] DoggyAgent. Step: 2208000. Time Elapsed: 1879.553 s. Mean Reward: 14.663. Std of Reward: 9.150. Training.
+[INFO] DoggyAgent. Step: 2210000. Time Elapsed: 1894.890 s. Mean Reward: 15.331. Std of Reward: 8.231. Training.
+[INFO] DoggyAgent. Step: 2212000. Time Elapsed: 1909.370 s. Mean Reward: 13.383. Std of Reward: 7.936. Training.
+[INFO] DoggyAgent. Step: 2214000. Time Elapsed: 1924.057 s. Mean Reward: 16.462. Std of Reward: 6.997. Training.
+[INFO] DoggyAgent. Step: 2216000. Time Elapsed: 1940.571 s. Mean Reward: 16.937. Std of Reward: 5.934. Training.
+[INFO] DoggyAgent. Step: 2218000. Time Elapsed: 1955.766 s. Mean Reward: 13.155. Std of Reward: 8.815. Training.
+[INFO] DoggyAgent. Step: 2220000. Time Elapsed: 1971.096 s. Mean Reward: 17.251. Std of Reward: 8.576. Training.
+[INFO] DoggyAgent. Step: 2222000. Time Elapsed: 1985.814 s. Mean Reward: 12.552. Std of Reward: 8.674. Training.
+[INFO] DoggyAgent. Step: 2224000. Time Elapsed: 2001.056 s. Mean Reward: 20.737. Std of Reward: 3.188. Training.
+[INFO] DoggyAgent. Step: 2226000. Time Elapsed: 2018.093 s. Mean Reward: 8.913. Std of Reward: 9.555. Training.
+[INFO] DoggyAgent. Step: 2228000. Time Elapsed: 2033.117 s. Mean Reward: 19.921. Std of Reward: 6.623. Training.
+[INFO] DoggyAgent. Step: 2230000. Time Elapsed: 2047.788 s. Mean Reward: 15.353. Std of Reward: 10.387. Training.
+[INFO] DoggyAgent. Step: 2232000. Time Elapsed: 2063.199 s. Mean Reward: 16.023. Std of Reward: 8.271. Training.
+[INFO] DoggyAgent. Step: 2234000. Time Elapsed: 2077.417 s. Mean Reward: 17.291. Std of Reward: 6.520. Training.
+[INFO] DoggyAgent. Step: 2236000. Time Elapsed: 2091.726 s. Mean Reward: 16.995. Std of Reward: 7.970. Training.
+[INFO] DoggyAgent. Step: 2238000. Time Elapsed: 2108.032 s. Mean Reward: 16.142. Std of Reward: 8.174. Training.
+[INFO] DoggyAgent. Step: 2240000. Time Elapsed: 2122.484 s. Mean Reward: 18.333. Std of Reward: 5.871. Training.
+[INFO] DoggyAgent. Step: 2242000. Time Elapsed: 2138.068 s. Mean Reward: 16.445. Std of Reward: 9.372. Training.
+[INFO] DoggyAgent. Step: 2244000. Time Elapsed: 2152.557 s. Mean Reward: 13.830. Std of Reward: 10.095. Training.
+[INFO] DoggyAgent. Step: 2246000. Time Elapsed: 2166.847 s. Mean Reward: 13.733. Std of Reward: 9.777. Training.
+[INFO] DoggyAgent. Step: 2248000. Time Elapsed: 2183.581 s. Mean Reward: 17.085. Std of Reward: 8.402. Training.
+[INFO] DoggyAgent. Step: 2250000. Time Elapsed: 2198.193 s. Mean Reward: 13.733. Std of Reward: 10.653. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 22:41:51.314000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2249966.onnx
+[INFO] DoggyAgent. Step: 2252000. Time Elapsed: 2214.325 s. Mean Reward: 19.129. Std of Reward: 7.006. Training.
+[INFO] DoggyAgent. Step: 2254000. Time Elapsed: 2228.632 s. Mean Reward: 15.231. Std of Reward: 9.435. Training.
+[INFO] DoggyAgent. Step: 2256000. Time Elapsed: 2243.424 s. Mean Reward: 15.538. Std of Reward: 9.249. Training.
+[INFO] DoggyAgent. Step: 2258000. Time Elapsed: 2259.637 s. Mean Reward: 14.403. Std of Reward: 9.935. Training.
+[INFO] DoggyAgent. Step: 2260000. Time Elapsed: 2274.227 s. Mean Reward: 16.623. Std of Reward: 8.501. Training.
+[INFO] DoggyAgent. Step: 2262000. Time Elapsed: 2289.306 s. Mean Reward: 16.429. Std of Reward: 10.105. Training.
+[INFO] DoggyAgent. Step: 2264000. Time Elapsed: 2305.565 s. Mean Reward: 15.372. Std of Reward: 8.209. Training.
+[INFO] DoggyAgent. Step: 2266000. Time Elapsed: 2321.216 s. Mean Reward: 16.840. Std of Reward: 7.712. Training.
+[INFO] DoggyAgent. Step: 2268000. Time Elapsed: 2337.963 s. Mean Reward: 16.207. Std of Reward: 9.084. Training.
+[INFO] DoggyAgent. Step: 2270000. Time Elapsed: 2353.558 s. Mean Reward: 11.161. Std of Reward: 9.889. Training.
+[INFO] DoggyAgent. Step: 2272000. Time Elapsed: 2418.918 s. Mean Reward: 16.697. Std of Reward: 7.518. Training.
+[INFO] DoggyAgent. Step: 2274000. Time Elapsed: 2828.907 s. Mean Reward: 15.956. Std of Reward: 9.579. Training.
+[INFO] DoggyAgent. Step: 2276000. Time Elapsed: 3133.369 s. Mean Reward: 15.175. Std of Reward: 7.327. Training.
+[INFO] DoggyAgent. Step: 2278000. Time Elapsed: 3150.200 s. Mean Reward: 12.869. Std of Reward: 8.476. Training.
+[INFO] DoggyAgent. Step: 2280000. Time Elapsed: 3164.944 s. Mean Reward: 17.985. Std of Reward: 5.997. Training.
+[INFO] DoggyAgent. Step: 2282000. Time Elapsed: 3178.912 s. Mean Reward: 14.556. Std of Reward: 8.648. Training.
+[INFO] DoggyAgent. Step: 2284000. Time Elapsed: 3193.670 s. Mean Reward: 16.515. Std of Reward: 9.045. Training.
+[INFO] DoggyAgent. Step: 2286000. Time Elapsed: 3208.653 s. Mean Reward: 14.543. Std of Reward: 9.915. Training.
+[INFO] DoggyAgent. Step: 2288000. Time Elapsed: 3224.910 s. Mean Reward: 16.075. Std of Reward: 9.941. Training.
+[INFO] DoggyAgent. Step: 2290000. Time Elapsed: 3239.354 s. Mean Reward: 14.478. Std of Reward: 10.674. Training.
+[INFO] DoggyAgent. Step: 2292000. Time Elapsed: 3254.361 s. Mean Reward: 17.175. Std of Reward: 9.663. Training.
+[INFO] DoggyAgent. Step: 2294000. Time Elapsed: 3268.898 s. Mean Reward: 13.219. Std of Reward: 8.786. Training.
+[INFO] DoggyAgent. Step: 2296000. Time Elapsed: 3283.591 s. Mean Reward: 17.651. Std of Reward: 6.405. Training.
+[INFO] DoggyAgent. Step: 2298000. Time Elapsed: 3300.447 s. Mean Reward: 16.151. Std of Reward: 8.978. Training.
+[INFO] DoggyAgent. Step: 2300000. Time Elapsed: 3315.613 s. Mean Reward: 13.480. Std of Reward: 7.253. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 23:00:28.734000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2299978.onnx
+[INFO] DoggyAgent. Step: 2302000. Time Elapsed: 3331.800 s. Mean Reward: 14.036. Std of Reward: 8.272. Training.
+[INFO] DoggyAgent. Step: 2304000. Time Elapsed: 3346.779 s. Mean Reward: 12.507. Std of Reward: 9.419. Training.
+[INFO] DoggyAgent. Step: 2306000. Time Elapsed: 3361.183 s. Mean Reward: 14.510. Std of Reward: 9.216. Training.
+[INFO] DoggyAgent. Step: 2308000. Time Elapsed: 3375.973 s. Mean Reward: 17.381. Std of Reward: 8.185. Training.
+[INFO] DoggyAgent. Step: 2310000. Time Elapsed: 3392.305 s. Mean Reward: 19.358. Std of Reward: 7.109. Training.
+[INFO] DoggyAgent. Step: 2312000. Time Elapsed: 3407.909 s. Mean Reward: 13.940. Std of Reward: 8.048. Training.
+[INFO] DoggyAgent. Step: 2314000. Time Elapsed: 3422.471 s. Mean Reward: 17.072. Std of Reward: 6.419. Training.
+[INFO] DoggyAgent. Step: 2316000. Time Elapsed: 3437.107 s. Mean Reward: 14.708. Std of Reward: 9.609. Training.
+[INFO] DoggyAgent. Step: 2318000. Time Elapsed: 3451.793 s. Mean Reward: 15.211. Std of Reward: 10.158. Training.
+[INFO] DoggyAgent. Step: 2320000. Time Elapsed: 3539.473 s. Mean Reward: 16.829. Std of Reward: 8.342. Training.
+[INFO] DoggyAgent. Step: 2322000. Time Elapsed: 3554.394 s. Mean Reward: 17.880. Std of Reward: 6.219. Training.
+[INFO] DoggyAgent. Step: 2324000. Time Elapsed: 3568.594 s. Mean Reward: 20.504. Std of Reward: 5.073. Training.
+[INFO] DoggyAgent. Step: 2326000. Time Elapsed: 3583.491 s. Mean Reward: 17.052. Std of Reward: 6.891. Training.
+[INFO] DoggyAgent. Step: 2328000. Time Elapsed: 3598.048 s. Mean Reward: 18.143. Std of Reward: 6.296. Training.
+[INFO] DoggyAgent. Step: 2330000. Time Elapsed: 3614.509 s. Mean Reward: 15.381. Std of Reward: 9.845. Training.
+[INFO] DoggyAgent. Step: 2332000. Time Elapsed: 3629.715 s. Mean Reward: 13.148. Std of Reward: 10.331. Training.
+[INFO] DoggyAgent. Step: 2334000. Time Elapsed: 3645.041 s. Mean Reward: 14.568. Std of Reward: 9.060. Training.
+[INFO] DoggyAgent. Step: 2336000. Time Elapsed: 3659.962 s. Mean Reward: 16.055. Std of Reward: 8.797. Training.
+[INFO] DoggyAgent. Step: 2338000. Time Elapsed: 3674.416 s. Mean Reward: 16.090. Std of Reward: 9.429. Training.
+[INFO] DoggyAgent. Step: 2340000. Time Elapsed: 3690.986 s. Mean Reward: 19.320. Std of Reward: 6.463. Training.
+[INFO] DoggyAgent. Step: 2342000. Time Elapsed: 3706.253 s. Mean Reward: 20.301. Std of Reward: 6.728. Training.
+[INFO] DoggyAgent. Step: 2344000. Time Elapsed: 3721.150 s. Mean Reward: 19.143. Std of Reward: 6.805. Training.
+[INFO] DoggyAgent. Step: 2346000. Time Elapsed: 3735.986 s. Mean Reward: 17.774. Std of Reward: 7.233. Training.
+[INFO] DoggyAgent. Step: 2348000. Time Elapsed: 3750.437 s. Mean Reward: 13.350. Std of Reward: 9.528. Training.
+[INFO] DoggyAgent. Step: 2350000. Time Elapsed: 3766.990 s. Mean Reward: 17.232. Std of Reward: 6.995. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 23:08:00.113000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2349987.onnx
+[INFO] DoggyAgent. Step: 2352000. Time Elapsed: 3783.780 s. Mean Reward: 20.141. Std of Reward: 7.155. Training.
+[INFO] DoggyAgent. Step: 2354000. Time Elapsed: 3799.055 s. Mean Reward: 16.847. Std of Reward: 9.093. Training.
+[INFO] DoggyAgent. Step: 2356000. Time Elapsed: 3813.725 s. Mean Reward: 15.181. Std of Reward: 8.559. Training.
+[INFO] DoggyAgent. Step: 2358000. Time Elapsed: 3828.911 s. Mean Reward: 20.388. Std of Reward: 3.175. Training.
+[INFO] DoggyAgent. Step: 2360000. Time Elapsed: 3845.824 s. Mean Reward: 16.229. Std of Reward: 6.274. Training.
+[INFO] DoggyAgent. Step: 2362000. Time Elapsed: 3860.875 s. Mean Reward: 11.513. Std of Reward: 9.824. Training.
+[INFO] DoggyAgent. Step: 2364000. Time Elapsed: 3875.401 s. Mean Reward: 16.478. Std of Reward: 7.436. Training.
+[INFO] DoggyAgent. Step: 2366000. Time Elapsed: 3890.081 s. Mean Reward: 16.162. Std of Reward: 7.870. Training.
+[INFO] DoggyAgent. Step: 2368000. Time Elapsed: 3905.021 s. Mean Reward: 13.348. Std of Reward: 9.279. Training.
+[INFO] DoggyAgent. Step: 2370000. Time Elapsed: 3921.761 s. Mean Reward: 18.792. Std of Reward: 4.563. Training.
+[INFO] DoggyAgent. Step: 2372000. Time Elapsed: 3936.872 s. Mean Reward: 12.134. Std of Reward: 10.144. Training.
+[INFO] DoggyAgent. Step: 2374000. Time Elapsed: 3951.140 s. Mean Reward: 13.043. Std of Reward: 8.994. Training.
+[INFO] DoggyAgent. Step: 2376000. Time Elapsed: 3965.979 s. Mean Reward: 16.819. Std of Reward: 8.223. Training.
+[INFO] DoggyAgent. Step: 2378000. Time Elapsed: 3981.132 s. Mean Reward: 19.016. Std of Reward: 5.309. Training.
+[INFO] DoggyAgent. Step: 2380000. Time Elapsed: 3998.096 s. Mean Reward: 18.111. Std of Reward: 5.248. Training.
+[INFO] DoggyAgent. Step: 2382000. Time Elapsed: 4013.545 s. Mean Reward: 16.387. Std of Reward: 8.800. Training.
+[INFO] DoggyAgent. Step: 2384000. Time Elapsed: 4028.131 s. Mean Reward: 15.639. Std of Reward: 9.400. Training.
+[INFO] DoggyAgent. Step: 2386000. Time Elapsed: 4043.415 s. Mean Reward: 13.228. Std of Reward: 8.877. Training.
+[INFO] DoggyAgent. Step: 2388000. Time Elapsed: 4059.020 s. Mean Reward: 12.724. Std of Reward: 10.278. Training.
+[INFO] DoggyAgent. Step: 2390000. Time Elapsed: 4074.747 s. Mean Reward: 18.868. Std of Reward: 5.055. Training.
+[INFO] DoggyAgent. Step: 2392000. Time Elapsed: 4092.022 s. Mean Reward: 18.458. Std of Reward: 7.211. Training.
+[INFO] DoggyAgent. Step: 2394000. Time Elapsed: 4108.112 s. Mean Reward: 19.522. Std of Reward: 3.437. Training.
+[INFO] DoggyAgent. Step: 2396000. Time Elapsed: 4123.676 s. Mean Reward: 17.569. Std of Reward: 7.360. Training.
+[INFO] DoggyAgent. Step: 2398000. Time Elapsed: 4139.206 s. Mean Reward: 18.017. Std of Reward: 6.476. Training.
+[INFO] DoggyAgent. Step: 2400000. Time Elapsed: 4154.419 s. Mean Reward: 17.000. Std of Reward: 9.023. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 23:14:27.540000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2399967.onnx
+[INFO] DoggyAgent. Step: 2402000. Time Elapsed: 4173.183 s. Mean Reward: 13.727. Std of Reward: 10.436. Training.
+[INFO] DoggyAgent. Step: 2404000. Time Elapsed: 4189.732 s. Mean Reward: 14.776. Std of Reward: 8.252. Training.
+[INFO] DoggyAgent. Step: 2406000. Time Elapsed: 4206.037 s. Mean Reward: 17.680. Std of Reward: 8.129. Training.
+[INFO] DoggyAgent. Step: 2408000. Time Elapsed: 4222.727 s. Mean Reward: 16.951. Std of Reward: 8.528. Training.
+[INFO] DoggyAgent. Step: 2410000. Time Elapsed: 4238.779 s. Mean Reward: 14.925. Std of Reward: 8.810. Training.
+[INFO] DoggyAgent. Step: 2412000. Time Elapsed: 4256.594 s. Mean Reward: 17.718. Std of Reward: 6.173. Training.
+[INFO] DoggyAgent. Step: 2414000. Time Elapsed: 4272.029 s. Mean Reward: 15.857. Std of Reward: 8.294. Training.
+[INFO] DoggyAgent. Step: 2416000. Time Elapsed: 4287.370 s. Mean Reward: 13.804. Std of Reward: 10.616. Training.
+[INFO] DoggyAgent. Step: 2418000. Time Elapsed: 4302.591 s. Mean Reward: 13.038. Std of Reward: 10.144. Training.
+[INFO] DoggyAgent. Step: 2420000. Time Elapsed: 4318.149 s. Mean Reward: 11.525. Std of Reward: 9.127. Training.
+[INFO] DoggyAgent. Step: 2422000. Time Elapsed: 4334.466 s. Mean Reward: 12.163. Std of Reward: 10.445. Training.
+[INFO] DoggyAgent. Step: 2424000. Time Elapsed: 4349.453 s. Mean Reward: 15.240. Std of Reward: 7.863. Training.
+[INFO] DoggyAgent. Step: 2426000. Time Elapsed: 4364.329 s. Mean Reward: 14.002. Std of Reward: 10.302. Training.
+[INFO] DoggyAgent. Step: 2428000. Time Elapsed: 4379.807 s. Mean Reward: 17.022. Std of Reward: 8.522. Training.
+[INFO] DoggyAgent. Step: 2430000. Time Elapsed: 4395.388 s. Mean Reward: 14.444. Std of Reward: 9.960. Training.
+[INFO] DoggyAgent. Step: 2432000. Time Elapsed: 4412.123 s. Mean Reward: 17.448. Std of Reward: 7.874. Training.
+[INFO] DoggyAgent. Step: 2434000. Time Elapsed: 4427.532 s. Mean Reward: 16.646. Std of Reward: 7.514. Training.
+[INFO] DoggyAgent. Step: 2436000. Time Elapsed: 4442.243 s. Mean Reward: 17.406. Std of Reward: 9.527. Training.
+[INFO] DoggyAgent. Step: 2438000. Time Elapsed: 4457.561 s. Mean Reward: 16.243. Std of Reward: 8.096. Training.
+[INFO] DoggyAgent. Step: 2440000. Time Elapsed: 4473.450 s. Mean Reward: 12.515. Std of Reward: 11.150. Training.
+[INFO] DoggyAgent. Step: 2442000. Time Elapsed: 4491.066 s. Mean Reward: 17.582. Std of Reward: 6.608. Training.
+[INFO] DoggyAgent. Step: 2444000. Time Elapsed: 4506.928 s. Mean Reward: 14.161. Std of Reward: 9.900. Training.
+[INFO] DoggyAgent. Step: 2446000. Time Elapsed: 4521.667 s. Mean Reward: 14.952. Std of Reward: 10.065. Training.
+[INFO] DoggyAgent. Step: 2448000. Time Elapsed: 4537.023 s. Mean Reward: 15.526. Std of Reward: 10.002. Training.
+[INFO] DoggyAgent. Step: 2450000. Time Elapsed: 4552.060 s. Mean Reward: 15.495. Std of Reward: 10.500. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 23:21:05.182000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2449940.onnx
+[INFO] DoggyAgent. Step: 2452000. Time Elapsed: 4570.813 s. Mean Reward: 14.356. Std of Reward: 10.441. Training.
+[INFO] DoggyAgent. Step: 2454000. Time Elapsed: 4585.880 s. Mean Reward: 15.323. Std of Reward: 5.216. Training.
+[INFO] DoggyAgent. Step: 2456000. Time Elapsed: 4600.852 s. Mean Reward: 16.886. Std of Reward: 7.314. Training.
+[INFO] DoggyAgent. Step: 2458000. Time Elapsed: 4616.239 s. Mean Reward: 18.233. Std of Reward: 6.512. Training.
+[INFO] DoggyAgent. Step: 2460000. Time Elapsed: 4632.158 s. Mean Reward: 14.555. Std of Reward: 10.560. Training.
+[INFO] DoggyAgent. Step: 2462000. Time Elapsed: 4647.674 s. Mean Reward: 14.654. Std of Reward: 8.701. Training.
+[INFO] DoggyAgent. Step: 2464000. Time Elapsed: 4664.890 s. Mean Reward: 15.680. Std of Reward: 7.152. Training.
+[INFO] DoggyAgent. Step: 2466000. Time Elapsed: 4680.667 s. Mean Reward: 15.188. Std of Reward: 7.390. Training.
+[INFO] DoggyAgent. Step: 2468000. Time Elapsed: 4696.731 s. Mean Reward: 12.938. Std of Reward: 9.844. Training.
+[INFO] DoggyAgent. Step: 2470000. Time Elapsed: 4712.767 s. Mean Reward: 17.368. Std of Reward: 8.047. Training.
+[INFO] DoggyAgent. Step: 2472000. Time Elapsed: 4729.085 s. Mean Reward: 15.444. Std of Reward: 10.073. Training.
+[INFO] DoggyAgent. Step: 2474000. Time Elapsed: 4746.363 s. Mean Reward: 15.951. Std of Reward: 8.329. Training.
+[INFO] DoggyAgent. Step: 2476000. Time Elapsed: 4763.456 s. Mean Reward: 13.447. Std of Reward: 9.819. Training.
+[INFO] DoggyAgent. Step: 2478000. Time Elapsed: 4778.758 s. Mean Reward: 13.428. Std of Reward: 9.133. Training.
+[INFO] DoggyAgent. Step: 2480000. Time Elapsed: 4794.145 s. Mean Reward: 20.494. Std of Reward: 3.720. Training.
+[INFO] DoggyAgent. Step: 2482000. Time Elapsed: 4809.200 s. Mean Reward: 15.514. Std of Reward: 8.454. Training.
+[INFO] DoggyAgent. Step: 2484000. Time Elapsed: 4826.358 s. Mean Reward: 18.797. Std of Reward: 6.958. Training.
+[INFO] DoggyAgent. Step: 2486000. Time Elapsed: 4842.012 s. Mean Reward: 18.477. Std of Reward: 6.055. Training.
+[INFO] DoggyAgent. Step: 2488000. Time Elapsed: 4857.384 s. Mean Reward: 16.519. Std of Reward: 8.738. Training.
+[INFO] DoggyAgent. Step: 2490000. Time Elapsed: 4872.939 s. Mean Reward: 11.852. Std of Reward: 11.219. Training.
+[INFO] DoggyAgent. Step: 2492000. Time Elapsed: 4888.237 s. Mean Reward: 13.922. Std of Reward: 9.727. Training.
+[INFO] DoggyAgent. Step: 2494000. Time Elapsed: 4906.055 s. Mean Reward: 17.730. Std of Reward: 7.158. Training.
+[INFO] DoggyAgent. Step: 2496000. Time Elapsed: 4921.239 s. Mean Reward: 16.825. Std of Reward: 8.129. Training.
+[INFO] DoggyAgent. Step: 2498000. Time Elapsed: 4936.711 s. Mean Reward: 18.406. Std of Reward: 6.393. Training.
+[INFO] DoggyAgent. Step: 2500000. Time Elapsed: 4952.072 s. Mean Reward: 20.990. Std of Reward: 2.481. Training.
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 23:27:45.192000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2499985.onnx
+/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/mlagents/trainers/torch_entities/model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1224 23:27:46.559000 2771886 torch/onnx/_internal/exporter/_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`... ✅
+[torch.onnx] Run decomposition...
+[torch.onnx] Run decomposition... ✅
+[torch.onnx] Translate the graph into ONNX...
+[torch.onnx] Translate the graph into ONNX... ✅
+The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 9).
+Failed to convert the model to the target version 9 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 127, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnxscript/version_converter/__init__.py", line 122, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+  File "/home/sohatiy/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project/venv/lib/python3.10/site-packages/onnx/version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+RuntimeError: /github/workspace/onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $16 for Identity
+Applied 5 of general pattern rewrite rules.
+Skipped deduplication of initializer 'version_number' as it is a graph input or output
+Skipped deduplication of initializer 'memory_size' as it is a graph input or output
+Skipped deduplication of initializer 'continuous_action_output_shape' as it is a graph input or output
+Skipped deduplication of initializer 'discrete_action_output_shape' as it is a graph input or output
+[INFO] Exported results/DogSmart1/DoggyAgent/DoggyAgent-2500049.onnx
+[INFO] Copied results/DogSmart1/DoggyAgent/DoggyAgent-2500049.onnx to results/DogSmart1/DoggyAgent.onnx.
+(venv) sohatiy@sohatiy:~/Downloads/ml-agents-develop (1) (1)/ml-agents-develop/ml-agents-develop/Project$
